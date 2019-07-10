@@ -1,5 +1,5 @@
 # protection, remember to seal after you are done
-if 1 == 1:
+if 1 == 0:
     import os
     import shutil
     import glob
