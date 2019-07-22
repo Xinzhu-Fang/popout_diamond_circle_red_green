@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" ?>
 <PsychoPy2experiment encoding="utf-8" version="3.1.2">
   <Settings>
-    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Completed URL" updates="None" val="https://github.com/Xinzhu-Fang/popout_exp0/blob/master/popout_cindy_lastrun.py" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
     <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
-    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="https://github.com/Xinzhu-Fang/popout_exp0" valType="str"/>
     <Param name="JS libs" updates="None" val="packaged" valType="str"/>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
     <Param name="OSF Project ID" updates="None" val="" valType="str"/>
@@ -22,12 +22,12 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="use prefs" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[2048, 1152]" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1536, 864]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
     <Param name="expName" updates="None" val="popout_cindy" valType="str"/>
-    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="exportHTML" updates="None" val="manually" valType="str"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
   </Settings>
   <Routines>

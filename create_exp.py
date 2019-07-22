@@ -13,13 +13,13 @@ temp_stimuli_dir = 'stimuli'
 # when tweaking exp paradigm, set bCreate_stimuli to 0 so stimuli don't
 # get created but existing files will get removed to make sure sound
 # files and condition files are consistent.
-# when teaking other aspects of exp design such as messages, set to 2 so stimuli don't
+# when tweaking other aspects of exp design such as messages, set to 2 so stimuli don't
 # change
-bCreate_stimuli = 1
+bCreate_stimuli = 2
 
 # temp_seed = 2  # sum(100*clock)#
 my_num_of_blocks = 3 # divisible by number of cue type of equal weights
-temp_num_of_trials = 36  # this number has to be divisible by number of locations
+temp_num_of_trials = 4  # this number has to be divisible by number of locations
 temp_seed = 1 #
 temp_expName = os.path.split(os.getcwd())[1] # get the current dir/exp name
 kTrial_allowed_keys = create_stimuli.create_stimuli(my_num_of_blocks, temp_num_of_trials,
@@ -76,7 +76,7 @@ tPause_text = 'Take a break as you needed. Press the ' + kPause_key + ' key when
 kTrial_duration = 1 + pTrial_duration + iTrial_duration
 
 temp_task_trial_duration = kTrial_duration
-temp_block_duration_in_minutes = temp_task_trial_duration * temp_num_of_trials / 60
+temp_block_duration_in_minutes = int(temp_task_trial_duration * temp_num_of_trials / 60)
 
 if temp_expName == 'popout_exp0':
     tInstr_text = 'Welcome to our psychophysics experiment! You will see diamonds display briefly on the screen,' + \
@@ -88,15 +88,15 @@ if temp_expName == 'popout_exp0':
                   'There will be ' + str(my_num_of_blocks) + ' in total. ' +\
                   'Each block will be ' + str(temp_block_duration_in_minutes) + ' minutes.'
 elif temp_expName == 'popout_diamond_circle_red_green':
-    tInstr_text = 'Welcome to our psychophysics experiment! You will see diamonds or circles display briefly on the screen,' + \
-                  'and the task is to respond to which shape is of the target diamond.' + \
-                  'For displays with several items, the target item will be the only one of its color.' + \
-                  '(All other items will be a drastically different color, and you should not respond to any of these.)' + \
-                  'If the target is a diamond, please press the Z key (hint: a diamond has corners like the letter z.' + \
-                  'If the target is a circle, please press the / key (hint: a circle is smooth like the / key.' + \
-                  'In some blocks, the target color does not change' + \
-                  'There will be ' + str(my_num_of_blocks) + ' in total. ' + \
-                  'Each block will be ' + str(temp_block_duration_in_minutes) + ' minutes.'
+    tInstr_text = 'Welcome to our psychophysics experiment! You will see diamonds or circles display briefly on the screen, ' + \
+                  'and the task is to respond to which shape is of the target diamond. ' + \
+                  'For displays with several items, the target item will be the only one of its color. ' + \
+                  '(All other items will be of a drastically different color, and you should not respond to any of these.) ' + \
+                  'If the target is a diamond, please press the Z key (hint: a diamond has corners like the letter z. ' + \
+                  'If the target is a circle, please press the / key (hint: a circle is smooth like the / key. ' + \
+                  'You will do this task repeatedly with no break inbetween in each block. In some blocks, the target color does not change. ' + \
+                  'Each block will be about' + str(temp_block_duration_in_minutes) + ' minutes. ' + \
+                  'There will be ' + str(my_num_of_blocks) + ' blocks in total. '
 
 col_names =['tInstr_text', 'tPause_text', 'tEnd_text', 'iTrial_duration', 'tTrial_duration', 'iTrial_size', 'pTrial_duration', 'pTrial_size',
             'my_num_of_blocks', 'temp_num_of_trials', 'kTrial_duration',
