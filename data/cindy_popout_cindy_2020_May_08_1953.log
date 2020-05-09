@@ -1,0 +1,59 @@
+0.8683 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'pyo', 'pygame'] (in that order).
+7.9857 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1440, 900]. Using actual size
+8.7820 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x13f8faef0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13cc2beb8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.7821 	EXP 	window1: recordFrameIntervals = False
+8.9480 	EXP 	window1: recordFrameIntervals = True
+9.1305 	EXP 	window1: recordFrameIntervals = False
+9.4636 	EXP 	Imported tExp.csv as conditions, 1 conditions, 15 params
+9.4638 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+9.5735 	EXP 	Created tInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tInstr', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+10.1840 	EXP 	Created iTrial = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='iTrial', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+10.1847 	EXP 	Created tTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='tTrial', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='norm', win=Window(...), wrapWidth=1)
+10.2459 	EXP 	Created pTrial = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='fixation.png', interpolate=True, mask=None, maskParams=None, name='pTrial', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+10.2480 	EXP 	Created tPause = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tPause', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+10.5570 	EXP 	Created tEnd = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tEnd', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='You finished it!', units='norm', win=Window(...), wrapWidth=1)
+10.8779 	EXP 	tInstr: autoDraw = True
+11.6984 	EXP 	Imported tAll_blocks.csv as conditions, 3 conditions, 1 params
+11.6987 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+11.6989 	EXP 	New trial (rep=0, index=0): OrderedDict([('cur_block_file_name', 'tBlock01.csv')])
+11.7075 	EXP 	Imported tBlock01.csv as conditions, 36 conditions, 10 params
+11.7079 	EXP 	Created sequence: random, trialTypes=36, nReps=1, seed=None
+11.7083 	EXP 	New trial (rep=0, index=0): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_003.png'), ('pc_file_name', 'stimuli\\block_01_trial_003.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 4)])
+11.7307 	DATA 	Keypress: z
+11.7319 	DATA 	Keypress: slash
+11.7442 	EXP 	tInstr: autoDraw = False
+11.7442 	EXP 	iTrial: size = array([0.9, 0.9])
+11.7442 	EXP 	iTrial: image = 'stimuli/block_01_trial_003.png'
+11.7442 	EXP 	pTrial: autoDraw = True
+12.1145 	EXP 	iTrial: autoDraw = True
+12.1145 	EXP 	tTrial: autoDraw = True
+12.1471 	EXP 	pTrial: autoDraw = False
+12.7137 	EXP 	tTrial: autoDraw = False
+13.0138 	EXP 	iTrial: autoDraw = False
+13.0158 	EXP 	New trial (rep=0, index=1): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_021.png'), ('pc_file_name', 'stimuli\\block_01_trial_021.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+13.0287 	DATA 	Keypress: z
+13.0475 	EXP 	iTrial: autoDraw = False
+13.0475 	EXP 	tTrial: autoDraw = False
+13.0475 	EXP 	pTrial: autoDraw = False
+13.0475 	EXP 	iTrial: size = array([0.9, 0.9])
+13.0475 	EXP 	iTrial: image = 'stimuli/block_01_trial_021.png'
+13.0475 	EXP 	pTrial: autoDraw = True
+13.4306 	EXP 	iTrial: autoDraw = True
+13.4306 	EXP 	tTrial: autoDraw = True
+13.4481 	EXP 	pTrial: autoDraw = False
+14.0307 	EXP 	tTrial: autoDraw = False
+14.1654 	EXP 	New trial (rep=0, index=2): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_011.png'), ('pc_file_name', 'stimuli\\block_01_trial_011.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+14.1786 	DATA 	Keypress: slash
+14.1971 	EXP 	iTrial: autoDraw = False
+14.1971 	EXP 	tTrial: autoDraw = False
+14.1971 	EXP 	pTrial: autoDraw = False
+14.1971 	EXP 	iTrial: size = array([0.9, 0.9])
+14.1971 	EXP 	iTrial: image = 'stimuli/block_01_trial_011.png'
+14.1971 	EXP 	pTrial: autoDraw = True
+14.5811 	EXP 	iTrial: autoDraw = True
+14.5811 	EXP 	tTrial: autoDraw = True
+14.5976 	EXP 	pTrial: autoDraw = False
+15.1806 	EXP 	tTrial: autoDraw = False
+15.4802 	EXP 	iTrial: autoDraw = False
+15.5318 	DATA 	Keypress: escape
+15.9142 	EXP 	window1: mouseVisible = True

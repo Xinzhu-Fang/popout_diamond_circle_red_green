@@ -1,0 +1,1265 @@
+0.6966 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'pyo', 'pygame'] (in that order).
+17.7110 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1440, 900]. Using actual size
+18.4793 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x13fa86ef0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13caf6eb8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+18.4794 	EXP 	window1: recordFrameIntervals = False
+18.6475 	EXP 	window1: recordFrameIntervals = True
+18.8294 	EXP 	window1: recordFrameIntervals = False
+19.1783 	EXP 	Imported tExp.csv as conditions, 1 conditions, 15 params
+19.1786 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+19.2838 	EXP 	Created tInstr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tInstr', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+19.9204 	EXP 	Created iTrial = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='iTrial', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+19.9211 	EXP 	Created tTrial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='tTrial', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='norm', win=Window(...), wrapWidth=1)
+19.9657 	EXP 	Created pTrial = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='fixation.png', interpolate=True, mask=None, maskParams=None, name='pTrial', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+19.9680 	EXP 	Created tPause = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tPause', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+20.2735 	EXP 	Created tEnd = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='tEnd', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='You finished it!', units='norm', win=Window(...), wrapWidth=1)
+20.5964 	EXP 	tInstr: autoDraw = True
+116.1061 	EXP 	Imported tAll_blocks.csv as conditions, 3 conditions, 1 params
+116.1065 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+116.1069 	EXP 	New trial (rep=0, index=0): OrderedDict([('cur_block_file_name', 'tBlock01.csv')])
+116.1163 	EXP 	Imported tBlock01.csv as conditions, 36 conditions, 10 params
+116.1166 	EXP 	Created sequence: random, trialTypes=36, nReps=1, seed=None
+116.1169 	EXP 	New trial (rep=0, index=0): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_009.png'), ('pc_file_name', 'stimuli\\block_01_trial_009.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+116.1399 	DATA 	Keypress: space
+116.1584 	EXP 	tInstr: autoDraw = False
+116.1584 	EXP 	iTrial: size = array([0.9, 0.9])
+116.1584 	EXP 	iTrial: image = 'stimuli/block_01_trial_009.png'
+116.1584 	EXP 	pTrial: autoDraw = True
+116.5184 	EXP 	iTrial: autoDraw = True
+116.5184 	EXP 	tTrial: autoDraw = True
+116.5705 	EXP 	pTrial: autoDraw = False
+117.1194 	EXP 	tTrial: autoDraw = False
+117.1215 	EXP 	New trial (rep=0, index=1): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_027.png'), ('pc_file_name', 'stimuli\\block_01_trial_027.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+117.1346 	DATA 	Keypress: slash
+117.1535 	EXP 	iTrial: autoDraw = False
+117.1535 	EXP 	tTrial: autoDraw = False
+117.1535 	EXP 	pTrial: autoDraw = False
+117.1535 	EXP 	iTrial: size = array([0.9, 0.9])
+117.1535 	EXP 	iTrial: image = 'stimuli/block_01_trial_027.png'
+117.1535 	EXP 	pTrial: autoDraw = True
+117.5351 	EXP 	iTrial: autoDraw = True
+117.5351 	EXP 	tTrial: autoDraw = True
+117.5684 	EXP 	pTrial: autoDraw = False
+117.9367 	EXP 	New trial (rep=0, index=2): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_023.png'), ('pc_file_name', 'stimuli\\block_01_trial_023.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+117.9501 	DATA 	Keypress: slash
+117.9669 	EXP 	iTrial: autoDraw = False
+117.9669 	EXP 	tTrial: autoDraw = False
+117.9669 	EXP 	pTrial: autoDraw = False
+117.9669 	EXP 	iTrial: size = array([0.9, 0.9])
+117.9669 	EXP 	iTrial: image = 'stimuli/block_01_trial_023.png'
+117.9669 	EXP 	pTrial: autoDraw = True
+118.3518 	EXP 	iTrial: autoDraw = True
+118.3518 	EXP 	tTrial: autoDraw = True
+118.3696 	EXP 	pTrial: autoDraw = False
+118.8535 	EXP 	New trial (rep=0, index=3): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_001.png'), ('pc_file_name', 'stimuli\\block_01_trial_001.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+118.8669 	DATA 	Keypress: z
+118.8844 	EXP 	iTrial: autoDraw = False
+118.8844 	EXP 	tTrial: autoDraw = False
+118.8844 	EXP 	pTrial: autoDraw = False
+118.8844 	EXP 	iTrial: size = array([0.9, 0.9])
+118.8844 	EXP 	iTrial: image = 'stimuli/block_01_trial_001.png'
+118.8844 	EXP 	pTrial: autoDraw = True
+119.2668 	EXP 	iTrial: autoDraw = True
+119.2668 	EXP 	tTrial: autoDraw = True
+119.2836 	EXP 	pTrial: autoDraw = False
+119.8028 	EXP 	New trial (rep=0, index=4): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_030.png'), ('pc_file_name', 'stimuli\\block_01_trial_030.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 5)])
+119.8136 	DATA 	Keypress: z
+119.8331 	EXP 	iTrial: autoDraw = False
+119.8331 	EXP 	tTrial: autoDraw = False
+119.8331 	EXP 	pTrial: autoDraw = False
+119.8331 	EXP 	iTrial: size = array([0.9, 0.9])
+119.8331 	EXP 	iTrial: image = 'stimuli/block_01_trial_030.png'
+119.8331 	EXP 	pTrial: autoDraw = True
+120.2166 	EXP 	iTrial: autoDraw = True
+120.2166 	EXP 	tTrial: autoDraw = True
+120.2333 	EXP 	pTrial: autoDraw = False
+120.6563 	EXP 	New trial (rep=0, index=5): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_032.png'), ('pc_file_name', 'stimuli\\block_01_trial_032.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 2)])
+120.6667 	DATA 	Keypress: slash
+120.6842 	EXP 	iTrial: autoDraw = False
+120.6842 	EXP 	tTrial: autoDraw = False
+120.6842 	EXP 	pTrial: autoDraw = False
+120.6842 	EXP 	iTrial: size = array([0.9, 0.9])
+120.6842 	EXP 	iTrial: image = 'stimuli/block_01_trial_032.png'
+120.6842 	EXP 	pTrial: autoDraw = True
+121.0671 	EXP 	iTrial: autoDraw = True
+121.0671 	EXP 	tTrial: autoDraw = True
+121.0839 	EXP 	pTrial: autoDraw = False
+121.5028 	EXP 	New trial (rep=0, index=6): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_002.png'), ('pc_file_name', 'stimuli\\block_01_trial_002.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+121.5121 	DATA 	Keypress: slash
+121.5344 	EXP 	iTrial: autoDraw = False
+121.5344 	EXP 	tTrial: autoDraw = False
+121.5344 	EXP 	pTrial: autoDraw = False
+121.5344 	EXP 	iTrial: size = array([0.9, 0.9])
+121.5344 	EXP 	iTrial: image = 'stimuli/block_01_trial_002.png'
+121.5344 	EXP 	pTrial: autoDraw = True
+121.9174 	EXP 	iTrial: autoDraw = True
+121.9174 	EXP 	tTrial: autoDraw = True
+121.9335 	EXP 	pTrial: autoDraw = False
+122.5186 	EXP 	tTrial: autoDraw = False
+122.8032 	EXP 	New trial (rep=0, index=7): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_004.png'), ('pc_file_name', 'stimuli\\block_01_trial_004.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+122.8143 	DATA 	Keypress: z
+122.8344 	EXP 	iTrial: autoDraw = False
+122.8344 	EXP 	iTrial: autoDraw = False
+122.8344 	EXP 	tTrial: autoDraw = False
+122.8344 	EXP 	pTrial: autoDraw = False
+122.8344 	EXP 	iTrial: size = array([0.9, 0.9])
+122.8344 	EXP 	iTrial: image = 'stimuli/block_01_trial_004.png'
+122.8344 	EXP 	pTrial: autoDraw = True
+123.2178 	EXP 	iTrial: autoDraw = True
+123.2178 	EXP 	tTrial: autoDraw = True
+123.2340 	EXP 	pTrial: autoDraw = False
+123.8207 	EXP 	New trial (rep=0, index=8): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_025.png'), ('pc_file_name', 'stimuli\\block_01_trial_025.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+123.8325 	DATA 	Keypress: slash
+123.8498 	EXP 	tTrial: autoDraw = False
+123.8498 	EXP 	iTrial: autoDraw = False
+123.8498 	EXP 	tTrial: autoDraw = False
+123.8498 	EXP 	pTrial: autoDraw = False
+123.8498 	EXP 	iTrial: size = array([0.9, 0.9])
+123.8498 	EXP 	iTrial: image = 'stimuli/block_01_trial_025.png'
+123.8498 	EXP 	pTrial: autoDraw = True
+124.2347 	EXP 	iTrial: autoDraw = True
+124.2347 	EXP 	tTrial: autoDraw = True
+124.2523 	EXP 	pTrial: autoDraw = False
+124.7854 	EXP 	New trial (rep=0, index=9): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_028.png'), ('pc_file_name', 'stimuli\\block_01_trial_028.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+124.7961 	DATA 	Keypress: z
+124.8192 	EXP 	iTrial: autoDraw = False
+124.8192 	EXP 	tTrial: autoDraw = False
+124.8192 	EXP 	pTrial: autoDraw = False
+124.8192 	EXP 	iTrial: size = array([0.9, 0.9])
+124.8192 	EXP 	iTrial: image = 'stimuli/block_01_trial_028.png'
+124.8192 	EXP 	pTrial: autoDraw = True
+125.2009 	EXP 	iTrial: autoDraw = True
+125.2009 	EXP 	tTrial: autoDraw = True
+125.2344 	EXP 	pTrial: autoDraw = False
+125.8006 	EXP 	tTrial: autoDraw = False
+125.9517 	EXP 	New trial (rep=0, index=10): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_015.png'), ('pc_file_name', 'stimuli\\block_01_trial_015.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 6)])
+125.9614 	DATA 	Keypress: z
+125.9836 	EXP 	iTrial: autoDraw = False
+125.9836 	EXP 	tTrial: autoDraw = False
+125.9836 	EXP 	pTrial: autoDraw = False
+125.9836 	EXP 	iTrial: size = array([0.9, 0.9])
+125.9836 	EXP 	iTrial: image = 'stimuli/block_01_trial_015.png'
+125.9836 	EXP 	pTrial: autoDraw = True
+126.3675 	EXP 	iTrial: autoDraw = True
+126.3675 	EXP 	tTrial: autoDraw = True
+126.3844 	EXP 	pTrial: autoDraw = False
+126.8846 	EXP 	New trial (rep=0, index=11): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_016.png'), ('pc_file_name', 'stimuli\\block_01_trial_016.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+126.8954 	DATA 	Keypress: z
+126.9171 	EXP 	iTrial: autoDraw = False
+126.9171 	EXP 	tTrial: autoDraw = False
+126.9171 	EXP 	pTrial: autoDraw = False
+126.9171 	EXP 	iTrial: size = array([0.9, 0.9])
+126.9171 	EXP 	iTrial: image = 'stimuli/block_01_trial_016.png'
+126.9171 	EXP 	pTrial: autoDraw = True
+127.3009 	EXP 	iTrial: autoDraw = True
+127.3009 	EXP 	tTrial: autoDraw = True
+127.3184 	EXP 	pTrial: autoDraw = False
+127.8017 	EXP 	New trial (rep=0, index=12): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_034.png'), ('pc_file_name', 'stimuli\\block_01_trial_034.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+127.8136 	DATA 	Keypress: z
+127.8333 	EXP 	iTrial: autoDraw = False
+127.8333 	EXP 	tTrial: autoDraw = False
+127.8333 	EXP 	pTrial: autoDraw = False
+127.8333 	EXP 	iTrial: size = array([0.9, 0.9])
+127.8333 	EXP 	iTrial: image = 'stimuli/block_01_trial_034.png'
+127.8333 	EXP 	pTrial: autoDraw = True
+128.2175 	EXP 	iTrial: autoDraw = True
+128.2175 	EXP 	tTrial: autoDraw = True
+128.2361 	EXP 	pTrial: autoDraw = False
+128.6856 	EXP 	New trial (rep=0, index=13): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_008.png'), ('pc_file_name', 'stimuli\\block_01_trial_008.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+128.6960 	DATA 	Keypress: slash
+128.7174 	EXP 	iTrial: autoDraw = False
+128.7174 	EXP 	tTrial: autoDraw = False
+128.7174 	EXP 	pTrial: autoDraw = False
+128.7174 	EXP 	iTrial: size = array([0.9, 0.9])
+128.7174 	EXP 	iTrial: image = 'stimuli/block_01_trial_008.png'
+128.7174 	EXP 	pTrial: autoDraw = True
+129.1003 	EXP 	iTrial: autoDraw = True
+129.1003 	EXP 	tTrial: autoDraw = True
+129.1167 	EXP 	pTrial: autoDraw = False
+129.4848 	EXP 	New trial (rep=0, index=14): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_000.png'), ('pc_file_name', 'stimuli\\block_01_trial_000.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 6)])
+129.4931 	DATA 	Keypress: slash
+129.5041 	EXP 	iTrial: autoDraw = False
+129.5041 	EXP 	tTrial: autoDraw = False
+129.5041 	EXP 	pTrial: autoDraw = False
+129.5041 	EXP 	iTrial: size = array([0.9, 0.9])
+129.5041 	EXP 	iTrial: image = 'stimuli/block_01_trial_000.png'
+129.5041 	EXP 	pTrial: autoDraw = True
+129.8858 	EXP 	iTrial: autoDraw = True
+129.8858 	EXP 	tTrial: autoDraw = True
+129.9178 	EXP 	pTrial: autoDraw = False
+130.3026 	EXP 	New trial (rep=0, index=15): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_003.png'), ('pc_file_name', 'stimuli\\block_01_trial_003.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 4)])
+130.3126 	DATA 	Keypress: z
+130.3341 	EXP 	iTrial: autoDraw = False
+130.3341 	EXP 	tTrial: autoDraw = False
+130.3341 	EXP 	pTrial: autoDraw = False
+130.3341 	EXP 	iTrial: size = array([0.9, 0.9])
+130.3341 	EXP 	iTrial: image = 'stimuli/block_01_trial_003.png'
+130.3341 	EXP 	pTrial: autoDraw = True
+130.7172 	EXP 	iTrial: autoDraw = True
+130.7172 	EXP 	tTrial: autoDraw = True
+130.7338 	EXP 	pTrial: autoDraw = False
+131.1026 	EXP 	New trial (rep=0, index=16): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_018.png'), ('pc_file_name', 'stimuli\\block_01_trial_018.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+131.1122 	DATA 	Keypress: slash
+131.1344 	EXP 	iTrial: autoDraw = False
+131.1344 	EXP 	tTrial: autoDraw = False
+131.1344 	EXP 	pTrial: autoDraw = False
+131.1344 	EXP 	iTrial: size = array([0.9, 0.9])
+131.1344 	EXP 	iTrial: image = 'stimuli/block_01_trial_018.png'
+131.1344 	EXP 	pTrial: autoDraw = True
+131.5179 	EXP 	iTrial: autoDraw = True
+131.5179 	EXP 	tTrial: autoDraw = True
+131.5339 	EXP 	pTrial: autoDraw = False
+132.0684 	EXP 	New trial (rep=0, index=17): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_012.png'), ('pc_file_name', 'stimuli\\block_01_trial_012.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+132.0795 	DATA 	Keypress: z
+132.1006 	EXP 	iTrial: autoDraw = False
+132.1006 	EXP 	tTrial: autoDraw = False
+132.1006 	EXP 	pTrial: autoDraw = False
+132.1006 	EXP 	iTrial: size = array([0.9, 0.9])
+132.1006 	EXP 	iTrial: image = 'stimuli/block_01_trial_012.png'
+132.1006 	EXP 	pTrial: autoDraw = True
+132.4837 	EXP 	iTrial: autoDraw = True
+132.4837 	EXP 	tTrial: autoDraw = True
+132.5013 	EXP 	pTrial: autoDraw = False
+132.8679 	EXP 	New trial (rep=0, index=18): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_007.png'), ('pc_file_name', 'stimuli\\block_01_trial_007.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+132.8782 	DATA 	Keypress: slash
+132.9011 	EXP 	iTrial: autoDraw = False
+132.9011 	EXP 	tTrial: autoDraw = False
+132.9011 	EXP 	pTrial: autoDraw = False
+132.9011 	EXP 	iTrial: size = array([0.9, 0.9])
+132.9011 	EXP 	iTrial: image = 'stimuli/block_01_trial_007.png'
+132.9011 	EXP 	pTrial: autoDraw = True
+133.2845 	EXP 	iTrial: autoDraw = True
+133.2845 	EXP 	tTrial: autoDraw = True
+133.3007 	EXP 	pTrial: autoDraw = False
+133.8183 	EXP 	New trial (rep=0, index=19): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_033.png'), ('pc_file_name', 'stimuli\\block_01_trial_033.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+133.8286 	DATA 	Keypress: z
+133.8512 	EXP 	iTrial: autoDraw = False
+133.8512 	EXP 	tTrial: autoDraw = False
+133.8512 	EXP 	pTrial: autoDraw = False
+133.8512 	EXP 	iTrial: size = array([0.9, 0.9])
+133.8512 	EXP 	iTrial: image = 'stimuli/block_01_trial_033.png'
+133.8512 	EXP 	pTrial: autoDraw = True
+134.2334 	EXP 	iTrial: autoDraw = True
+134.2334 	EXP 	tTrial: autoDraw = True
+134.2678 	EXP 	pTrial: autoDraw = False
+134.6852 	EXP 	New trial (rep=0, index=20): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_019.png'), ('pc_file_name', 'stimuli\\block_01_trial_019.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+134.6957 	DATA 	Keypress: z
+134.7170 	EXP 	iTrial: autoDraw = False
+134.7170 	EXP 	tTrial: autoDraw = False
+134.7170 	EXP 	pTrial: autoDraw = False
+134.7170 	EXP 	iTrial: size = array([0.9, 0.9])
+134.7170 	EXP 	iTrial: image = 'stimuli/block_01_trial_019.png'
+134.7170 	EXP 	pTrial: autoDraw = True
+135.1011 	EXP 	iTrial: autoDraw = True
+135.1011 	EXP 	tTrial: autoDraw = True
+135.1178 	EXP 	pTrial: autoDraw = False
+135.5348 	EXP 	New trial (rep=0, index=21): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_024.png'), ('pc_file_name', 'stimuli\\block_01_trial_024.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 4)])
+135.5459 	DATA 	Keypress: slash
+135.5673 	EXP 	iTrial: autoDraw = False
+135.5673 	EXP 	tTrial: autoDraw = False
+135.5673 	EXP 	pTrial: autoDraw = False
+135.5673 	EXP 	iTrial: size = array([0.9, 0.9])
+135.5673 	EXP 	iTrial: image = 'stimuli/block_01_trial_024.png'
+135.5673 	EXP 	pTrial: autoDraw = True
+135.9501 	EXP 	iTrial: autoDraw = True
+135.9501 	EXP 	tTrial: autoDraw = True
+135.9669 	EXP 	pTrial: autoDraw = False
+136.3025 	EXP 	New trial (rep=0, index=22): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_006.png'), ('pc_file_name', 'stimuli\\block_01_trial_006.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+136.3124 	DATA 	Keypress: z
+136.3339 	EXP 	iTrial: autoDraw = False
+136.3339 	EXP 	tTrial: autoDraw = False
+136.3339 	EXP 	pTrial: autoDraw = False
+136.3339 	EXP 	iTrial: size = array([0.9, 0.9])
+136.3339 	EXP 	iTrial: image = 'stimuli/block_01_trial_006.png'
+136.3339 	EXP 	pTrial: autoDraw = True
+136.7170 	EXP 	iTrial: autoDraw = True
+136.7170 	EXP 	tTrial: autoDraw = True
+136.7339 	EXP 	pTrial: autoDraw = False
+137.0693 	EXP 	New trial (rep=0, index=23): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_029.png'), ('pc_file_name', 'stimuli\\block_01_trial_029.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+137.0790 	DATA 	Keypress: z
+137.1011 	EXP 	iTrial: autoDraw = False
+137.1011 	EXP 	tTrial: autoDraw = False
+137.1011 	EXP 	pTrial: autoDraw = False
+137.1011 	EXP 	iTrial: size = array([0.9, 0.9])
+137.1011 	EXP 	iTrial: image = 'stimuli/block_01_trial_029.png'
+137.1011 	EXP 	pTrial: autoDraw = True
+137.4837 	EXP 	iTrial: autoDraw = True
+137.4837 	EXP 	tTrial: autoDraw = True
+137.5007 	EXP 	pTrial: autoDraw = False
+137.9513 	EXP 	New trial (rep=0, index=24): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_013.png'), ('pc_file_name', 'stimuli\\block_01_trial_013.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 2)])
+137.9608 	DATA 	Keypress: z
+137.9708 	EXP 	iTrial: autoDraw = False
+137.9708 	EXP 	tTrial: autoDraw = False
+137.9708 	EXP 	pTrial: autoDraw = False
+137.9708 	EXP 	iTrial: size = array([0.9, 0.9])
+137.9708 	EXP 	iTrial: image = 'stimuli/block_01_trial_013.png'
+137.9708 	EXP 	pTrial: autoDraw = True
+138.3504 	EXP 	iTrial: autoDraw = True
+138.3504 	EXP 	tTrial: autoDraw = True
+138.3843 	EXP 	pTrial: autoDraw = False
+138.7024 	EXP 	New trial (rep=0, index=25): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_011.png'), ('pc_file_name', 'stimuli\\block_01_trial_011.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+138.7131 	DATA 	Keypress: slash
+138.7336 	EXP 	iTrial: autoDraw = False
+138.7336 	EXP 	tTrial: autoDraw = False
+138.7336 	EXP 	pTrial: autoDraw = False
+138.7336 	EXP 	iTrial: size = array([0.9, 0.9])
+138.7336 	EXP 	iTrial: image = 'stimuli/block_01_trial_011.png'
+138.7336 	EXP 	pTrial: autoDraw = True
+139.1173 	EXP 	iTrial: autoDraw = True
+139.1173 	EXP 	tTrial: autoDraw = True
+139.1339 	EXP 	pTrial: autoDraw = False
+139.4845 	EXP 	New trial (rep=0, index=26): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_022.png'), ('pc_file_name', 'stimuli\\block_01_trial_022.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+139.4947 	DATA 	Keypress: slash
+139.5173 	EXP 	iTrial: autoDraw = False
+139.5173 	EXP 	tTrial: autoDraw = False
+139.5173 	EXP 	pTrial: autoDraw = False
+139.5173 	EXP 	iTrial: size = array([0.9, 0.9])
+139.5173 	EXP 	iTrial: image = 'stimuli/block_01_trial_022.png'
+139.5173 	EXP 	pTrial: autoDraw = True
+139.8843 	EXP 	iTrial: autoDraw = True
+139.8843 	EXP 	tTrial: autoDraw = True
+139.9177 	EXP 	pTrial: autoDraw = False
+140.3512 	EXP 	New trial (rep=0, index=27): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_026.png'), ('pc_file_name', 'stimuli\\block_01_trial_026.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+140.3620 	DATA 	Keypress: z
+140.3840 	EXP 	iTrial: autoDraw = False
+140.3840 	EXP 	tTrial: autoDraw = False
+140.3840 	EXP 	pTrial: autoDraw = False
+140.3840 	EXP 	iTrial: size = array([0.9, 0.9])
+140.3840 	EXP 	iTrial: image = 'stimuli/block_01_trial_026.png'
+140.3840 	EXP 	pTrial: autoDraw = True
+140.7677 	EXP 	iTrial: autoDraw = True
+140.7677 	EXP 	tTrial: autoDraw = True
+140.7839 	EXP 	pTrial: autoDraw = False
+141.3672 	EXP 	tTrial: autoDraw = False
+141.5693 	EXP 	New trial (rep=0, index=28): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_031.png'), ('pc_file_name', 'stimuli\\block_01_trial_031.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+141.5794 	DATA 	Keypress: slash
+141.6005 	EXP 	iTrial: autoDraw = False
+141.6005 	EXP 	tTrial: autoDraw = False
+141.6005 	EXP 	pTrial: autoDraw = False
+141.6005 	EXP 	iTrial: size = array([0.9, 0.9])
+141.6005 	EXP 	iTrial: image = 'stimuli/block_01_trial_031.png'
+141.6005 	EXP 	pTrial: autoDraw = True
+141.9838 	EXP 	iTrial: autoDraw = True
+141.9838 	EXP 	tTrial: autoDraw = True
+142.0006 	EXP 	pTrial: autoDraw = False
+142.5837 	EXP 	tTrial: autoDraw = False
+142.6352 	EXP 	New trial (rep=0, index=29): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_010.png'), ('pc_file_name', 'stimuli\\block_01_trial_010.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+142.6494 	DATA 	Keypress: slash
+142.6671 	EXP 	iTrial: autoDraw = False
+142.6671 	EXP 	tTrial: autoDraw = False
+142.6671 	EXP 	pTrial: autoDraw = False
+142.6671 	EXP 	iTrial: size = array([0.9, 0.9])
+142.6671 	EXP 	iTrial: image = 'stimuli/block_01_trial_010.png'
+142.6671 	EXP 	pTrial: autoDraw = True
+143.0504 	EXP 	iTrial: autoDraw = True
+143.0504 	EXP 	tTrial: autoDraw = True
+143.0673 	EXP 	pTrial: autoDraw = False
+143.5023 	EXP 	New trial (rep=0, index=30): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_005.png'), ('pc_file_name', 'stimuli\\block_01_trial_005.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 2)])
+143.5142 	DATA 	Keypress: z
+143.5336 	EXP 	iTrial: autoDraw = False
+143.5336 	EXP 	tTrial: autoDraw = False
+143.5336 	EXP 	pTrial: autoDraw = False
+143.5336 	EXP 	iTrial: size = array([0.9, 0.9])
+143.5336 	EXP 	iTrial: image = 'stimuli/block_01_trial_005.png'
+143.5336 	EXP 	pTrial: autoDraw = True
+143.9171 	EXP 	iTrial: autoDraw = True
+143.9171 	EXP 	tTrial: autoDraw = True
+143.9339 	EXP 	pTrial: autoDraw = False
+144.3679 	EXP 	New trial (rep=0, index=31): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_021.png'), ('pc_file_name', 'stimuli\\block_01_trial_021.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+144.3761 	DATA 	Keypress: slash
+144.3863 	EXP 	iTrial: autoDraw = False
+144.3863 	EXP 	tTrial: autoDraw = False
+144.3863 	EXP 	pTrial: autoDraw = False
+144.3863 	EXP 	iTrial: size = array([0.9, 0.9])
+144.3863 	EXP 	iTrial: image = 'stimuli/block_01_trial_021.png'
+144.3863 	EXP 	pTrial: autoDraw = True
+144.7677 	EXP 	iTrial: autoDraw = True
+144.7677 	EXP 	tTrial: autoDraw = True
+144.8011 	EXP 	pTrial: autoDraw = False
+145.1704 	EXP 	New trial (rep=0, index=32): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_014.png'), ('pc_file_name', 'stimuli\\block_01_trial_014.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+145.1826 	DATA 	Keypress: slash
+145.2007 	EXP 	iTrial: autoDraw = False
+145.2007 	EXP 	tTrial: autoDraw = False
+145.2007 	EXP 	pTrial: autoDraw = False
+145.2007 	EXP 	iTrial: size = array([0.9, 0.9])
+145.2007 	EXP 	iTrial: image = 'stimuli/block_01_trial_014.png'
+145.2007 	EXP 	pTrial: autoDraw = True
+145.5839 	EXP 	iTrial: autoDraw = True
+145.5839 	EXP 	tTrial: autoDraw = True
+145.6006 	EXP 	pTrial: autoDraw = False
+146.1834 	EXP 	tTrial: autoDraw = False
+146.4836 	EXP 	iTrial: autoDraw = False
+147.0858 	EXP 	New trial (rep=0, index=33): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_017.png'), ('pc_file_name', 'stimuli\\block_01_trial_017.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+147.1178 	EXP 	iTrial: autoDraw = False
+147.1178 	EXP 	tTrial: autoDraw = False
+147.1178 	EXP 	pTrial: autoDraw = False
+147.1178 	EXP 	iTrial: size = array([0.9, 0.9])
+147.1178 	EXP 	iTrial: image = 'stimuli/block_01_trial_017.png'
+147.1178 	EXP 	pTrial: autoDraw = True
+147.5010 	EXP 	iTrial: autoDraw = True
+147.5010 	EXP 	tTrial: autoDraw = True
+147.5175 	EXP 	pTrial: autoDraw = False
+148.1012 	EXP 	tTrial: autoDraw = False
+148.2027 	EXP 	New trial (rep=0, index=34): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_035.png'), ('pc_file_name', 'stimuli\\block_01_trial_035.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', -1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+148.2132 	DATA 	Keypress: slash
+148.2346 	EXP 	iTrial: autoDraw = False
+148.2346 	EXP 	tTrial: autoDraw = False
+148.2346 	EXP 	pTrial: autoDraw = False
+148.2346 	EXP 	iTrial: size = array([0.9, 0.9])
+148.2346 	EXP 	iTrial: image = 'stimuli/block_01_trial_035.png'
+148.2346 	EXP 	pTrial: autoDraw = True
+148.6174 	EXP 	iTrial: autoDraw = True
+148.6174 	EXP 	tTrial: autoDraw = True
+148.6342 	EXP 	pTrial: autoDraw = False
+149.1683 	EXP 	New trial (rep=0, index=35): OrderedDict([('linux_file_name', 'stimuli/block_01_trial_020.png'), ('pc_file_name', 'stimuli\\block_01_trial_020.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', -1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+149.1797 	DATA 	Keypress: z
+149.2009 	EXP 	iTrial: autoDraw = False
+149.2009 	EXP 	tTrial: autoDraw = False
+149.2009 	EXP 	pTrial: autoDraw = False
+149.2009 	EXP 	iTrial: size = array([0.9, 0.9])
+149.2009 	EXP 	iTrial: image = 'stimuli/block_01_trial_020.png'
+149.2009 	EXP 	pTrial: autoDraw = True
+149.5843 	EXP 	iTrial: autoDraw = True
+149.5843 	EXP 	tTrial: autoDraw = True
+149.6010 	EXP 	pTrial: autoDraw = False
+150.0504 	DATA 	Keypress: z
+150.0666 	EXP 	iTrial: autoDraw = False
+150.0666 	EXP 	tTrial: autoDraw = False
+150.0666 	EXP 	pTrial: autoDraw = False
+150.0666 	EXP 	tPause: text = 'Take a break as you needed. Press the space key when you are ready to resume\n Number of blocks completed: 1\n Number of blocks remaining:  2'
+150.0666 	EXP 	tPause: autoDraw = True
+152.4688 	EXP 	New trial (rep=0, index=1): OrderedDict([('cur_block_file_name', 'tBlock03.csv')])
+152.4778 	EXP 	Imported tBlock03.csv as conditions, 36 conditions, 10 params
+152.4781 	EXP 	Created sequence: random, trialTypes=36, nReps=1, seed=None
+152.4784 	EXP 	New trial (rep=0, index=0): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_092.png'), ('pc_file_name', 'stimuli\\block_03_trial_092.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+152.4884 	DATA 	Keypress: space
+152.5009 	EXP 	tPause: autoDraw = False
+152.5009 	EXP 	iTrial: size = array([0.9, 0.9])
+152.5009 	EXP 	iTrial: image = 'stimuli/block_03_trial_092.png'
+152.5009 	EXP 	pTrial: autoDraw = True
+152.8838 	EXP 	iTrial: autoDraw = True
+152.8838 	EXP 	tTrial: autoDraw = True
+152.9009 	EXP 	pTrial: autoDraw = False
+153.4025 	EXP 	New trial (rep=0, index=1): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_087.png'), ('pc_file_name', 'stimuli\\block_03_trial_087.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+153.4126 	DATA 	Keypress: slash
+153.4338 	EXP 	iTrial: autoDraw = False
+153.4338 	EXP 	tTrial: autoDraw = False
+153.4338 	EXP 	pTrial: autoDraw = False
+153.4338 	EXP 	iTrial: size = array([0.9, 0.9])
+153.4338 	EXP 	iTrial: image = 'stimuli/block_03_trial_087.png'
+153.4338 	EXP 	pTrial: autoDraw = True
+153.8175 	EXP 	iTrial: autoDraw = True
+153.8175 	EXP 	tTrial: autoDraw = True
+153.8339 	EXP 	pTrial: autoDraw = False
+154.3525 	EXP 	New trial (rep=0, index=2): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_099.png'), ('pc_file_name', 'stimuli\\block_03_trial_099.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+154.3635 	DATA 	Keypress: z
+154.3842 	EXP 	iTrial: autoDraw = False
+154.3842 	EXP 	tTrial: autoDraw = False
+154.3842 	EXP 	pTrial: autoDraw = False
+154.3842 	EXP 	iTrial: size = array([0.9, 0.9])
+154.3842 	EXP 	iTrial: image = 'stimuli/block_03_trial_099.png'
+154.3842 	EXP 	pTrial: autoDraw = True
+154.3866 	DATA 	Keypress: slash
+154.7672 	EXP 	iTrial: autoDraw = True
+154.7672 	EXP 	tTrial: autoDraw = True
+154.7842 	EXP 	pTrial: autoDraw = False
+155.3024 	EXP 	New trial (rep=0, index=3): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_089.png'), ('pc_file_name', 'stimuli\\block_03_trial_089.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+155.3134 	DATA 	Keypress: z
+155.3342 	EXP 	iTrial: autoDraw = False
+155.3342 	EXP 	tTrial: autoDraw = False
+155.3342 	EXP 	pTrial: autoDraw = False
+155.3342 	EXP 	iTrial: size = array([0.9, 0.9])
+155.3342 	EXP 	iTrial: image = 'stimuli/block_03_trial_089.png'
+155.3342 	EXP 	pTrial: autoDraw = True
+155.7168 	EXP 	iTrial: autoDraw = True
+155.7168 	EXP 	tTrial: autoDraw = True
+155.7336 	EXP 	pTrial: autoDraw = False
+156.2184 	EXP 	New trial (rep=0, index=4): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_090.png'), ('pc_file_name', 'stimuli\\block_03_trial_090.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+156.2285 	DATA 	Keypress: slash
+156.2504 	EXP 	iTrial: autoDraw = False
+156.2504 	EXP 	tTrial: autoDraw = False
+156.2504 	EXP 	pTrial: autoDraw = False
+156.2504 	EXP 	iTrial: size = array([0.9, 0.9])
+156.2504 	EXP 	iTrial: image = 'stimuli/block_03_trial_090.png'
+156.2504 	EXP 	pTrial: autoDraw = True
+156.6338 	EXP 	iTrial: autoDraw = True
+156.6338 	EXP 	tTrial: autoDraw = True
+156.6505 	EXP 	pTrial: autoDraw = False
+157.0182 	EXP 	New trial (rep=0, index=5): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_097.png'), ('pc_file_name', 'stimuli\\block_03_trial_097.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+157.0272 	DATA 	Keypress: slash
+157.0370 	EXP 	iTrial: autoDraw = False
+157.0370 	EXP 	tTrial: autoDraw = False
+157.0370 	EXP 	pTrial: autoDraw = False
+157.0370 	EXP 	iTrial: size = array([0.9, 0.9])
+157.0370 	EXP 	iTrial: image = 'stimuli/block_03_trial_097.png'
+157.0370 	EXP 	pTrial: autoDraw = True
+157.4171 	EXP 	iTrial: autoDraw = True
+157.4171 	EXP 	tTrial: autoDraw = True
+157.4502 	EXP 	pTrial: autoDraw = False
+157.8349 	EXP 	New trial (rep=0, index=6): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_095.png'), ('pc_file_name', 'stimuli\\block_03_trial_095.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+157.8450 	DATA 	Keypress: slash
+157.8670 	EXP 	iTrial: autoDraw = False
+157.8670 	EXP 	tTrial: autoDraw = False
+157.8670 	EXP 	pTrial: autoDraw = False
+157.8670 	EXP 	iTrial: size = array([0.9, 0.9])
+157.8670 	EXP 	iTrial: image = 'stimuli/block_03_trial_095.png'
+157.8670 	EXP 	pTrial: autoDraw = True
+158.2507 	EXP 	iTrial: autoDraw = True
+158.2507 	EXP 	tTrial: autoDraw = True
+158.2669 	EXP 	pTrial: autoDraw = False
+158.7346 	EXP 	New trial (rep=0, index=7): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_080.png'), ('pc_file_name', 'stimuli\\block_03_trial_080.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 6)])
+158.7445 	DATA 	Keypress: z
+158.7674 	EXP 	iTrial: autoDraw = False
+158.7674 	EXP 	tTrial: autoDraw = False
+158.7674 	EXP 	pTrial: autoDraw = False
+158.7674 	EXP 	iTrial: size = array([0.9, 0.9])
+158.7674 	EXP 	iTrial: image = 'stimuli/block_03_trial_080.png'
+158.7674 	EXP 	pTrial: autoDraw = True
+159.1503 	EXP 	iTrial: autoDraw = True
+159.1503 	EXP 	tTrial: autoDraw = True
+159.1679 	EXP 	pTrial: autoDraw = False
+159.6853 	EXP 	New trial (rep=0, index=8): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_078.png'), ('pc_file_name', 'stimuli\\block_03_trial_078.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 7)])
+159.6960 	DATA 	Keypress: z
+159.7167 	EXP 	iTrial: autoDraw = False
+159.7167 	EXP 	tTrial: autoDraw = False
+159.7167 	EXP 	pTrial: autoDraw = False
+159.7167 	EXP 	iTrial: size = array([0.9, 0.9])
+159.7167 	EXP 	iTrial: image = 'stimuli/block_03_trial_078.png'
+159.7167 	EXP 	pTrial: autoDraw = True
+160.1006 	EXP 	iTrial: autoDraw = True
+160.1006 	EXP 	tTrial: autoDraw = True
+160.1185 	EXP 	pTrial: autoDraw = False
+160.7003 	EXP 	tTrial: autoDraw = False
+160.7675 	EXP 	New trial (rep=0, index=9): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_103.png'), ('pc_file_name', 'stimuli\\block_03_trial_103.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 3)])
+160.7774 	DATA 	Keypress: z
+160.8000 	EXP 	iTrial: autoDraw = False
+160.8000 	EXP 	tTrial: autoDraw = False
+160.8000 	EXP 	pTrial: autoDraw = False
+160.8000 	EXP 	iTrial: size = array([0.9, 0.9])
+160.8000 	EXP 	iTrial: image = 'stimuli/block_03_trial_103.png'
+160.8000 	EXP 	pTrial: autoDraw = True
+161.1840 	EXP 	iTrial: autoDraw = True
+161.1840 	EXP 	tTrial: autoDraw = True
+161.2006 	EXP 	pTrial: autoDraw = False
+161.6693 	EXP 	New trial (rep=0, index=10): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_091.png'), ('pc_file_name', 'stimuli\\block_03_trial_091.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 3)])
+161.6822 	DATA 	Keypress: slash
+161.7003 	EXP 	iTrial: autoDraw = False
+161.7003 	EXP 	tTrial: autoDraw = False
+161.7003 	EXP 	pTrial: autoDraw = False
+161.7003 	EXP 	iTrial: size = array([0.9, 0.9])
+161.7003 	EXP 	iTrial: image = 'stimuli/block_03_trial_091.png'
+161.7003 	EXP 	pTrial: autoDraw = True
+162.0836 	EXP 	iTrial: autoDraw = True
+162.0836 	EXP 	tTrial: autoDraw = True
+162.1010 	EXP 	pTrial: autoDraw = False
+162.4685 	EXP 	New trial (rep=0, index=11): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_106.png'), ('pc_file_name', 'stimuli\\block_03_trial_106.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+162.4787 	DATA 	Keypress: z
+162.5003 	EXP 	iTrial: autoDraw = False
+162.5003 	EXP 	tTrial: autoDraw = False
+162.5003 	EXP 	pTrial: autoDraw = False
+162.5003 	EXP 	iTrial: size = array([0.9, 0.9])
+162.5003 	EXP 	iTrial: image = 'stimuli/block_03_trial_106.png'
+162.5003 	EXP 	pTrial: autoDraw = True
+162.8837 	EXP 	iTrial: autoDraw = True
+162.8837 	EXP 	tTrial: autoDraw = True
+162.9017 	EXP 	pTrial: autoDraw = False
+163.3187 	EXP 	New trial (rep=0, index=12): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_104.png'), ('pc_file_name', 'stimuli\\block_03_trial_104.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+163.3294 	DATA 	Keypress: z
+163.3507 	EXP 	iTrial: autoDraw = False
+163.3507 	EXP 	tTrial: autoDraw = False
+163.3507 	EXP 	pTrial: autoDraw = False
+163.3507 	EXP 	iTrial: size = array([0.9, 0.9])
+163.3507 	EXP 	iTrial: image = 'stimuli/block_03_trial_104.png'
+163.3507 	EXP 	pTrial: autoDraw = True
+163.7336 	EXP 	iTrial: autoDraw = True
+163.7336 	EXP 	tTrial: autoDraw = True
+163.7498 	EXP 	pTrial: autoDraw = False
+164.3177 	EXP 	New trial (rep=0, index=13): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_086.png'), ('pc_file_name', 'stimuli\\block_03_trial_086.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+164.3281 	DATA 	Keypress: slash
+164.3497 	EXP 	tTrial: autoDraw = False
+164.3497 	EXP 	iTrial: autoDraw = False
+164.3497 	EXP 	tTrial: autoDraw = False
+164.3497 	EXP 	pTrial: autoDraw = False
+164.3497 	EXP 	iTrial: size = array([0.9, 0.9])
+164.3497 	EXP 	iTrial: image = 'stimuli/block_03_trial_086.png'
+164.3497 	EXP 	pTrial: autoDraw = True
+164.7336 	EXP 	iTrial: autoDraw = True
+164.7336 	EXP 	tTrial: autoDraw = True
+164.7505 	EXP 	pTrial: autoDraw = False
+165.2024 	EXP 	New trial (rep=0, index=14): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_082.png'), ('pc_file_name', 'stimuli\\block_03_trial_082.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+165.2170 	DATA 	Keypress: z
+165.2337 	EXP 	iTrial: autoDraw = False
+165.2337 	EXP 	tTrial: autoDraw = False
+165.2337 	EXP 	pTrial: autoDraw = False
+165.2337 	EXP 	iTrial: size = array([0.9, 0.9])
+165.2337 	EXP 	iTrial: image = 'stimuli/block_03_trial_082.png'
+165.2337 	EXP 	pTrial: autoDraw = True
+165.6175 	EXP 	iTrial: autoDraw = True
+165.6175 	EXP 	tTrial: autoDraw = True
+165.6341 	EXP 	pTrial: autoDraw = False
+165.8852 	EXP 	New trial (rep=0, index=15): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_105.png'), ('pc_file_name', 'stimuli\\block_03_trial_105.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+165.8960 	DATA 	Keypress: slash
+165.9169 	EXP 	iTrial: autoDraw = False
+165.9169 	EXP 	tTrial: autoDraw = False
+165.9169 	EXP 	pTrial: autoDraw = False
+165.9169 	EXP 	iTrial: size = array([0.9, 0.9])
+165.9169 	EXP 	iTrial: image = 'stimuli/block_03_trial_105.png'
+165.9169 	EXP 	pTrial: autoDraw = True
+166.3007 	EXP 	iTrial: autoDraw = True
+166.3007 	EXP 	tTrial: autoDraw = True
+166.3173 	EXP 	pTrial: autoDraw = False
+166.9007 	EXP 	tTrial: autoDraw = False
+166.9848 	EXP 	New trial (rep=0, index=16): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_101.png'), ('pc_file_name', 'stimuli\\block_03_trial_101.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 3)])
+166.9947 	DATA 	Keypress: slash
+167.0170 	EXP 	iTrial: autoDraw = False
+167.0170 	EXP 	tTrial: autoDraw = False
+167.0170 	EXP 	pTrial: autoDraw = False
+167.0170 	EXP 	iTrial: size = array([0.9, 0.9])
+167.0170 	EXP 	iTrial: image = 'stimuli/block_03_trial_101.png'
+167.0170 	EXP 	pTrial: autoDraw = True
+167.4006 	EXP 	iTrial: autoDraw = True
+167.4006 	EXP 	tTrial: autoDraw = True
+167.4173 	EXP 	pTrial: autoDraw = False
+167.8195 	EXP 	New trial (rep=0, index=17): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_084.png'), ('pc_file_name', 'stimuli\\block_03_trial_084.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+167.8319 	DATA 	Keypress: z
+167.8506 	EXP 	iTrial: autoDraw = False
+167.8506 	EXP 	tTrial: autoDraw = False
+167.8506 	EXP 	pTrial: autoDraw = False
+167.8506 	EXP 	iTrial: size = array([0.9, 0.9])
+167.8506 	EXP 	iTrial: image = 'stimuli/block_03_trial_084.png'
+167.8506 	EXP 	pTrial: autoDraw = True
+168.2336 	EXP 	iTrial: autoDraw = True
+168.2336 	EXP 	tTrial: autoDraw = True
+168.2506 	EXP 	pTrial: autoDraw = False
+168.6847 	EXP 	New trial (rep=0, index=18): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_107.png'), ('pc_file_name', 'stimuli\\block_03_trial_107.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+168.6955 	DATA 	Keypress: slash
+168.7167 	EXP 	iTrial: autoDraw = False
+168.7167 	EXP 	tTrial: autoDraw = False
+168.7167 	EXP 	pTrial: autoDraw = False
+168.7167 	EXP 	iTrial: size = array([0.9, 0.9])
+168.7167 	EXP 	iTrial: image = 'stimuli/block_03_trial_107.png'
+168.7167 	EXP 	pTrial: autoDraw = True
+169.1007 	EXP 	iTrial: autoDraw = True
+169.1007 	EXP 	tTrial: autoDraw = True
+169.1173 	EXP 	pTrial: autoDraw = False
+169.5846 	EXP 	New trial (rep=0, index=19): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_072.png'), ('pc_file_name', 'stimuli\\block_03_trial_072.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+169.5952 	DATA 	Keypress: z
+169.6173 	EXP 	iTrial: autoDraw = False
+169.6173 	EXP 	tTrial: autoDraw = False
+169.6173 	EXP 	pTrial: autoDraw = False
+169.6173 	EXP 	iTrial: size = array([0.9, 0.9])
+169.6173 	EXP 	iTrial: image = 'stimuli/block_03_trial_072.png'
+169.6173 	EXP 	pTrial: autoDraw = True
+169.9997 	EXP 	iTrial: autoDraw = True
+169.9997 	EXP 	tTrial: autoDraw = True
+170.0163 	EXP 	pTrial: autoDraw = False
+170.6006 	EXP 	tTrial: autoDraw = False
+170.7019 	EXP 	New trial (rep=0, index=20): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_094.png'), ('pc_file_name', 'stimuli\\block_03_trial_094.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+170.7135 	DATA 	Keypress: z
+170.7333 	EXP 	iTrial: autoDraw = False
+170.7333 	EXP 	tTrial: autoDraw = False
+170.7333 	EXP 	pTrial: autoDraw = False
+170.7333 	EXP 	iTrial: size = array([0.9, 0.9])
+170.7333 	EXP 	iTrial: image = 'stimuli/block_03_trial_094.png'
+170.7333 	EXP 	pTrial: autoDraw = True
+171.1173 	EXP 	iTrial: autoDraw = True
+171.1173 	EXP 	tTrial: autoDraw = True
+171.1339 	EXP 	pTrial: autoDraw = False
+171.7167 	EXP 	tTrial: autoDraw = False
+172.0175 	EXP 	iTrial: autoDraw = False
+172.1844 	EXP 	New trial (rep=0, index=21): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_088.png'), ('pc_file_name', 'stimuli\\block_03_trial_088.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 5)])
+172.1940 	DATA 	Keypress: slash
+172.2169 	EXP 	iTrial: autoDraw = False
+172.2169 	EXP 	tTrial: autoDraw = False
+172.2169 	EXP 	pTrial: autoDraw = False
+172.2169 	EXP 	iTrial: size = array([0.9, 0.9])
+172.2169 	EXP 	iTrial: image = 'stimuli/block_03_trial_088.png'
+172.2169 	EXP 	pTrial: autoDraw = True
+172.6002 	EXP 	iTrial: autoDraw = True
+172.6002 	EXP 	tTrial: autoDraw = True
+172.6167 	EXP 	pTrial: autoDraw = False
+172.9681 	EXP 	New trial (rep=0, index=22): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_085.png'), ('pc_file_name', 'stimuli\\block_03_trial_085.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+172.9792 	DATA 	Keypress: slash
+173.0002 	EXP 	iTrial: autoDraw = False
+173.0002 	EXP 	tTrial: autoDraw = False
+173.0002 	EXP 	pTrial: autoDraw = False
+173.0002 	EXP 	iTrial: size = array([0.9, 0.9])
+173.0002 	EXP 	iTrial: image = 'stimuli/block_03_trial_085.png'
+173.0002 	EXP 	pTrial: autoDraw = True
+173.3841 	EXP 	iTrial: autoDraw = True
+173.3841 	EXP 	tTrial: autoDraw = True
+173.4006 	EXP 	pTrial: autoDraw = False
+173.9676 	EXP 	New trial (rep=0, index=23): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_081.png'), ('pc_file_name', 'stimuli\\block_03_trial_081.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+173.9778 	DATA 	Keypress: z
+173.9993 	EXP 	iTrial: autoDraw = False
+173.9993 	EXP 	tTrial: autoDraw = False
+173.9993 	EXP 	pTrial: autoDraw = False
+173.9993 	EXP 	iTrial: size = array([0.9, 0.9])
+173.9993 	EXP 	iTrial: image = 'stimuli/block_03_trial_081.png'
+173.9993 	EXP 	pTrial: autoDraw = True
+174.3840 	EXP 	iTrial: autoDraw = True
+174.3840 	EXP 	tTrial: autoDraw = True
+174.4007 	EXP 	pTrial: autoDraw = False
+174.9831 	EXP 	tTrial: autoDraw = False
+175.2839 	EXP 	iTrial: autoDraw = False
+175.3015 	EXP 	New trial (rep=0, index=24): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_074.png'), ('pc_file_name', 'stimuli\\block_03_trial_074.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+175.3120 	DATA 	Keypress: slash
+175.3333 	EXP 	iTrial: autoDraw = False
+175.3333 	EXP 	tTrial: autoDraw = False
+175.3333 	EXP 	pTrial: autoDraw = False
+175.3333 	EXP 	iTrial: size = array([0.9, 0.9])
+175.3333 	EXP 	iTrial: image = 'stimuli/block_03_trial_074.png'
+175.3333 	EXP 	pTrial: autoDraw = True
+175.7167 	EXP 	iTrial: autoDraw = True
+175.7167 	EXP 	tTrial: autoDraw = True
+175.7332 	EXP 	pTrial: autoDraw = False
+176.1517 	EXP 	New trial (rep=0, index=25): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_100.png'), ('pc_file_name', 'stimuli\\block_03_trial_100.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+176.1630 	DATA 	Keypress: slash
+176.1837 	EXP 	iTrial: autoDraw = False
+176.1837 	EXP 	tTrial: autoDraw = False
+176.1837 	EXP 	pTrial: autoDraw = False
+176.1837 	EXP 	iTrial: size = array([0.9, 0.9])
+176.1837 	EXP 	iTrial: image = 'stimuli/block_03_trial_100.png'
+176.1837 	EXP 	pTrial: autoDraw = True
+176.5664 	EXP 	iTrial: autoDraw = True
+176.5664 	EXP 	tTrial: autoDraw = True
+176.5830 	EXP 	pTrial: autoDraw = False
+177.0338 	EXP 	New trial (rep=0, index=26): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_076.png'), ('pc_file_name', 'stimuli\\block_03_trial_076.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+177.0419 	DATA 	Keypress: z
+177.0517 	EXP 	iTrial: autoDraw = False
+177.0517 	EXP 	tTrial: autoDraw = False
+177.0517 	EXP 	pTrial: autoDraw = False
+177.0517 	EXP 	iTrial: size = array([0.9, 0.9])
+177.0517 	EXP 	iTrial: image = 'stimuli/block_03_trial_076.png'
+177.0517 	EXP 	pTrial: autoDraw = True
+177.4334 	EXP 	iTrial: autoDraw = True
+177.4334 	EXP 	tTrial: autoDraw = True
+177.4672 	EXP 	pTrial: autoDraw = False
+177.8516 	EXP 	New trial (rep=0, index=27): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_073.png'), ('pc_file_name', 'stimuli\\block_03_trial_073.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+177.8627 	DATA 	Keypress: slash
+177.8835 	EXP 	iTrial: autoDraw = False
+177.8835 	EXP 	tTrial: autoDraw = False
+177.8835 	EXP 	pTrial: autoDraw = False
+177.8835 	EXP 	iTrial: size = array([0.9, 0.9])
+177.8835 	EXP 	iTrial: image = 'stimuli/block_03_trial_073.png'
+177.8835 	EXP 	pTrial: autoDraw = True
+178.2672 	EXP 	iTrial: autoDraw = True
+178.2672 	EXP 	tTrial: autoDraw = True
+178.2837 	EXP 	pTrial: autoDraw = False
+178.6347 	EXP 	New trial (rep=0, index=28): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_098.png'), ('pc_file_name', 'stimuli\\block_03_trial_098.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+178.6455 	DATA 	Keypress: slash
+178.6664 	EXP 	iTrial: autoDraw = False
+178.6664 	EXP 	tTrial: autoDraw = False
+178.6664 	EXP 	pTrial: autoDraw = False
+178.6664 	EXP 	iTrial: size = array([0.9, 0.9])
+178.6664 	EXP 	iTrial: image = 'stimuli/block_03_trial_098.png'
+178.6664 	EXP 	pTrial: autoDraw = True
+179.0505 	EXP 	iTrial: autoDraw = True
+179.0505 	EXP 	tTrial: autoDraw = True
+179.0667 	EXP 	pTrial: autoDraw = False
+179.6525 	EXP 	tTrial: autoDraw = False
+179.6541 	EXP 	New trial (rep=0, index=29): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_096.png'), ('pc_file_name', 'stimuli\\block_03_trial_096.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 3)])
+179.6646 	DATA 	Keypress: z
+179.6831 	EXP 	iTrial: autoDraw = False
+179.6831 	EXP 	tTrial: autoDraw = False
+179.6831 	EXP 	pTrial: autoDraw = False
+179.6831 	EXP 	iTrial: size = array([0.9, 0.9])
+179.6831 	EXP 	iTrial: image = 'stimuli/block_03_trial_096.png'
+179.6831 	EXP 	pTrial: autoDraw = True
+180.0670 	EXP 	iTrial: autoDraw = True
+180.0670 	EXP 	tTrial: autoDraw = True
+180.0839 	EXP 	pTrial: autoDraw = False
+180.5526 	EXP 	New trial (rep=0, index=30): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_077.png'), ('pc_file_name', 'stimuli\\block_03_trial_077.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+180.5662 	DATA 	Keypress: slash
+180.5831 	EXP 	iTrial: autoDraw = False
+180.5831 	EXP 	tTrial: autoDraw = False
+180.5831 	EXP 	pTrial: autoDraw = False
+180.5831 	EXP 	iTrial: size = array([0.9, 0.9])
+180.5831 	EXP 	iTrial: image = 'stimuli/block_03_trial_077.png'
+180.5831 	EXP 	pTrial: autoDraw = True
+180.9667 	EXP 	iTrial: autoDraw = True
+180.9667 	EXP 	tTrial: autoDraw = True
+180.9832 	EXP 	pTrial: autoDraw = False
+181.5665 	EXP 	tTrial: autoDraw = False
+181.7680 	EXP 	New trial (rep=0, index=31): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_102.png'), ('pc_file_name', 'stimuli\\block_03_trial_102.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+181.7780 	DATA 	Keypress: slash
+181.8002 	EXP 	iTrial: autoDraw = False
+181.8002 	EXP 	tTrial: autoDraw = False
+181.8002 	EXP 	pTrial: autoDraw = False
+181.8002 	EXP 	iTrial: size = array([0.9, 0.9])
+181.8002 	EXP 	iTrial: image = 'stimuli/block_03_trial_102.png'
+181.8002 	EXP 	pTrial: autoDraw = True
+182.1837 	EXP 	iTrial: autoDraw = True
+182.1837 	EXP 	tTrial: autoDraw = True
+182.2004 	EXP 	pTrial: autoDraw = False
+182.7832 	EXP 	tTrial: autoDraw = False
+183.0839 	EXP 	iTrial: autoDraw = False
+183.2847 	EXP 	New trial (rep=0, index=32): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_075.png'), ('pc_file_name', 'stimuli\\block_03_trial_075.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+183.2952 	DATA 	Keypress: slash
+183.3172 	EXP 	iTrial: autoDraw = False
+183.3172 	EXP 	tTrial: autoDraw = False
+183.3172 	EXP 	pTrial: autoDraw = False
+183.3172 	EXP 	iTrial: size = array([0.9, 0.9])
+183.3172 	EXP 	iTrial: image = 'stimuli/block_03_trial_075.png'
+183.3172 	EXP 	pTrial: autoDraw = True
+183.7002 	EXP 	iTrial: autoDraw = True
+183.7002 	EXP 	tTrial: autoDraw = True
+183.7163 	EXP 	pTrial: autoDraw = False
+184.0851 	EXP 	New trial (rep=0, index=33): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_079.png'), ('pc_file_name', 'stimuli\\block_03_trial_079.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+184.0958 	DATA 	Keypress: slash
+184.1168 	EXP 	iTrial: autoDraw = False
+184.1168 	EXP 	tTrial: autoDraw = False
+184.1168 	EXP 	pTrial: autoDraw = False
+184.1168 	EXP 	iTrial: size = array([0.9, 0.9])
+184.1168 	EXP 	iTrial: image = 'stimuli/block_03_trial_079.png'
+184.1168 	EXP 	pTrial: autoDraw = True
+184.4999 	EXP 	iTrial: autoDraw = True
+184.4999 	EXP 	tTrial: autoDraw = True
+184.5170 	EXP 	pTrial: autoDraw = False
+184.9015 	EXP 	New trial (rep=0, index=34): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_093.png'), ('pc_file_name', 'stimuli\\block_03_trial_093.png'), ('distract_condition', 0), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+184.9163 	DATA 	Keypress: slash
+184.9336 	EXP 	iTrial: autoDraw = False
+184.9336 	EXP 	tTrial: autoDraw = False
+184.9336 	EXP 	pTrial: autoDraw = False
+184.9336 	EXP 	iTrial: size = array([0.9, 0.9])
+184.9336 	EXP 	iTrial: image = 'stimuli/block_03_trial_093.png'
+184.9336 	EXP 	pTrial: autoDraw = True
+185.3172 	EXP 	iTrial: autoDraw = True
+185.3172 	EXP 	tTrial: autoDraw = True
+185.3331 	EXP 	pTrial: autoDraw = False
+185.7503 	EXP 	New trial (rep=0, index=35): OrderedDict([('linux_file_name', 'stimuli/block_03_trial_083.png'), ('pc_file_name', 'stimuli\\block_03_trial_083.png'), ('distract_condition', 1), ('target_color_condition', [0, 255, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [225, 0, 0]), ('cue_condition', 1), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+185.7591 	DATA 	Keypress: z
+185.7690 	EXP 	iTrial: autoDraw = False
+185.7690 	EXP 	tTrial: autoDraw = False
+185.7690 	EXP 	pTrial: autoDraw = False
+185.7690 	EXP 	iTrial: size = array([0.9, 0.9])
+185.7690 	EXP 	iTrial: image = 'stimuli/block_03_trial_083.png'
+185.7690 	EXP 	pTrial: autoDraw = True
+186.1494 	EXP 	iTrial: autoDraw = True
+186.1494 	EXP 	tTrial: autoDraw = True
+186.1830 	EXP 	pTrial: autoDraw = False
+186.6107 	DATA 	Keypress: slash
+186.6330 	EXP 	iTrial: autoDraw = False
+186.6330 	EXP 	tTrial: autoDraw = False
+186.6330 	EXP 	pTrial: autoDraw = False
+186.6330 	EXP 	tPause: text = 'Take a break as you needed. Press the space key when you are ready to resume\n Number of blocks completed: 2\n Number of blocks remaining:  1'
+186.6330 	EXP 	tPause: autoDraw = True
+186.7027 	DATA 	Keypress: z
+188.2017 	EXP 	New trial (rep=0, index=2): OrderedDict([('cur_block_file_name', 'tBlock02.csv')])
+188.2114 	EXP 	Imported tBlock02.csv as conditions, 36 conditions, 10 params
+188.2118 	EXP 	Created sequence: random, trialTypes=36, nReps=1, seed=None
+188.2122 	EXP 	New trial (rep=0, index=0): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_044.png'), ('pc_file_name', 'stimuli\\block_02_trial_044.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+188.2225 	DATA 	Keypress: space
+188.2333 	EXP 	tPause: autoDraw = False
+188.2333 	EXP 	iTrial: size = array([0.9, 0.9])
+188.2333 	EXP 	iTrial: image = 'stimuli/block_02_trial_044.png'
+188.2333 	EXP 	pTrial: autoDraw = True
+188.6167 	EXP 	iTrial: autoDraw = True
+188.6167 	EXP 	tTrial: autoDraw = True
+188.6337 	EXP 	pTrial: autoDraw = False
+189.2018 	EXP 	New trial (rep=0, index=1): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_052.png'), ('pc_file_name', 'stimuli\\block_02_trial_052.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+189.2136 	DATA 	Keypress: z
+189.2337 	EXP 	tTrial: autoDraw = False
+189.2337 	EXP 	iTrial: autoDraw = False
+189.2337 	EXP 	tTrial: autoDraw = False
+189.2337 	EXP 	pTrial: autoDraw = False
+189.2337 	EXP 	iTrial: size = array([0.9, 0.9])
+189.2337 	EXP 	iTrial: image = 'stimuli/block_02_trial_052.png'
+189.2337 	EXP 	pTrial: autoDraw = True
+189.2359 	DATA 	Keypress: slash
+189.6167 	EXP 	iTrial: autoDraw = True
+189.6167 	EXP 	tTrial: autoDraw = True
+189.6333 	EXP 	pTrial: autoDraw = False
+190.2179 	EXP 	tTrial: autoDraw = False
+190.3841 	EXP 	New trial (rep=0, index=2): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_068.png'), ('pc_file_name', 'stimuli\\block_02_trial_068.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+190.3948 	DATA 	Keypress: slash
+190.4170 	EXP 	iTrial: autoDraw = False
+190.4170 	EXP 	tTrial: autoDraw = False
+190.4170 	EXP 	pTrial: autoDraw = False
+190.4170 	EXP 	iTrial: size = array([0.9, 0.9])
+190.4170 	EXP 	iTrial: image = 'stimuli/block_02_trial_068.png'
+190.4170 	EXP 	pTrial: autoDraw = True
+190.8000 	EXP 	iTrial: autoDraw = True
+190.8000 	EXP 	tTrial: autoDraw = True
+190.8167 	EXP 	pTrial: autoDraw = False
+191.3185 	EXP 	New trial (rep=0, index=3): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_055.png'), ('pc_file_name', 'stimuli\\block_02_trial_055.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+191.3305 	DATA 	Keypress: z
+191.3507 	EXP 	iTrial: autoDraw = False
+191.3507 	EXP 	tTrial: autoDraw = False
+191.3507 	EXP 	pTrial: autoDraw = False
+191.3507 	EXP 	iTrial: size = array([0.9, 0.9])
+191.3507 	EXP 	iTrial: image = 'stimuli/block_02_trial_055.png'
+191.3507 	EXP 	pTrial: autoDraw = True
+191.7330 	EXP 	iTrial: autoDraw = True
+191.7330 	EXP 	tTrial: autoDraw = True
+191.7498 	EXP 	pTrial: autoDraw = False
+192.3331 	EXP 	tTrial: autoDraw = False
+192.6336 	EXP 	iTrial: autoDraw = False
+193.2357 	EXP 	New trial (rep=0, index=4): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_050.png'), ('pc_file_name', 'stimuli\\block_02_trial_050.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+193.2665 	EXP 	iTrial: autoDraw = False
+193.2665 	EXP 	tTrial: autoDraw = False
+193.2665 	EXP 	pTrial: autoDraw = False
+193.2665 	EXP 	iTrial: size = array([0.9, 0.9])
+193.2665 	EXP 	iTrial: image = 'stimuli/block_02_trial_050.png'
+193.2665 	EXP 	pTrial: autoDraw = True
+193.6506 	EXP 	iTrial: autoDraw = True
+193.6506 	EXP 	tTrial: autoDraw = True
+193.6667 	EXP 	pTrial: autoDraw = False
+194.2499 	EXP 	tTrial: autoDraw = False
+194.2672 	EXP 	New trial (rep=0, index=5): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_063.png'), ('pc_file_name', 'stimuli\\block_02_trial_063.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 6)])
+194.2778 	DATA 	Keypress: z
+194.2996 	EXP 	iTrial: autoDraw = False
+194.2996 	EXP 	tTrial: autoDraw = False
+194.2996 	EXP 	pTrial: autoDraw = False
+194.2996 	EXP 	iTrial: size = array([0.9, 0.9])
+194.2996 	EXP 	iTrial: image = 'stimuli/block_02_trial_063.png'
+194.2996 	EXP 	pTrial: autoDraw = True
+194.6837 	EXP 	iTrial: autoDraw = True
+194.6837 	EXP 	tTrial: autoDraw = True
+194.7002 	EXP 	pTrial: autoDraw = False
+195.2838 	EXP 	tTrial: autoDraw = False
+195.3016 	EXP 	New trial (rep=0, index=6): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_070.png'), ('pc_file_name', 'stimuli\\block_02_trial_070.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+195.3122 	DATA 	Keypress: z
+195.3337 	EXP 	iTrial: autoDraw = False
+195.3337 	EXP 	tTrial: autoDraw = False
+195.3337 	EXP 	pTrial: autoDraw = False
+195.3337 	EXP 	iTrial: size = array([0.9, 0.9])
+195.3337 	EXP 	iTrial: image = 'stimuli/block_02_trial_070.png'
+195.3337 	EXP 	pTrial: autoDraw = True
+195.7162 	EXP 	iTrial: autoDraw = True
+195.7162 	EXP 	tTrial: autoDraw = True
+195.7330 	EXP 	pTrial: autoDraw = False
+196.2007 	EXP 	New trial (rep=0, index=7): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_060.png'), ('pc_file_name', 'stimuli\\block_02_trial_060.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 7)])
+196.2121 	DATA 	Keypress: z
+196.2336 	EXP 	iTrial: autoDraw = False
+196.2336 	EXP 	tTrial: autoDraw = False
+196.2336 	EXP 	pTrial: autoDraw = False
+196.2336 	EXP 	iTrial: size = array([0.9, 0.9])
+196.2336 	EXP 	iTrial: image = 'stimuli/block_02_trial_060.png'
+196.2336 	EXP 	pTrial: autoDraw = True
+196.6165 	EXP 	iTrial: autoDraw = True
+196.6165 	EXP 	tTrial: autoDraw = True
+196.6336 	EXP 	pTrial: autoDraw = False
+197.0845 	EXP 	New trial (rep=0, index=8): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_048.png'), ('pc_file_name', 'stimuli\\block_02_trial_048.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 3)])
+197.0946 	DATA 	Keypress: slash
+197.1168 	EXP 	iTrial: autoDraw = False
+197.1168 	EXP 	tTrial: autoDraw = False
+197.1168 	EXP 	pTrial: autoDraw = False
+197.1168 	EXP 	iTrial: size = array([0.9, 0.9])
+197.1168 	EXP 	iTrial: image = 'stimuli/block_02_trial_048.png'
+197.1168 	EXP 	pTrial: autoDraw = True
+197.5002 	EXP 	iTrial: autoDraw = True
+197.5002 	EXP 	tTrial: autoDraw = True
+197.5169 	EXP 	pTrial: autoDraw = False
+198.0991 	EXP 	tTrial: autoDraw = False
+198.1007 	EXP 	New trial (rep=0, index=9): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_064.png'), ('pc_file_name', 'stimuli\\block_02_trial_064.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+198.1106 	DATA 	Keypress: z
+198.1330 	EXP 	iTrial: autoDraw = False
+198.1330 	EXP 	tTrial: autoDraw = False
+198.1330 	EXP 	pTrial: autoDraw = False
+198.1330 	EXP 	iTrial: size = array([0.9, 0.9])
+198.1330 	EXP 	iTrial: image = 'stimuli/block_02_trial_064.png'
+198.1330 	EXP 	pTrial: autoDraw = True
+198.5169 	EXP 	iTrial: autoDraw = True
+198.5169 	EXP 	tTrial: autoDraw = True
+198.5335 	EXP 	pTrial: autoDraw = False
+198.9849 	EXP 	New trial (rep=0, index=10): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_066.png'), ('pc_file_name', 'stimuli\\block_02_trial_066.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 0)])
+198.9947 	DATA 	Keypress: z
+199.0163 	EXP 	iTrial: autoDraw = False
+199.0163 	EXP 	tTrial: autoDraw = False
+199.0163 	EXP 	pTrial: autoDraw = False
+199.0163 	EXP 	iTrial: size = array([0.9, 0.9])
+199.0163 	EXP 	iTrial: image = 'stimuli/block_02_trial_066.png'
+199.0163 	EXP 	pTrial: autoDraw = True
+199.4001 	EXP 	iTrial: autoDraw = True
+199.4001 	EXP 	tTrial: autoDraw = True
+199.4170 	EXP 	pTrial: autoDraw = False
+199.9185 	EXP 	New trial (rep=0, index=11): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_047.png'), ('pc_file_name', 'stimuli\\block_02_trial_047.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 4)])
+199.9309 	DATA 	Keypress: z
+199.9504 	EXP 	iTrial: autoDraw = False
+199.9504 	EXP 	tTrial: autoDraw = False
+199.9504 	EXP 	pTrial: autoDraw = False
+199.9504 	EXP 	iTrial: size = array([0.9, 0.9])
+199.9504 	EXP 	iTrial: image = 'stimuli/block_02_trial_047.png'
+199.9504 	EXP 	pTrial: autoDraw = True
+200.3334 	EXP 	iTrial: autoDraw = True
+200.3334 	EXP 	tTrial: autoDraw = True
+200.3527 	EXP 	pTrial: autoDraw = False
+200.7346 	EXP 	New trial (rep=0, index=12): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_056.png'), ('pc_file_name', 'stimuli\\block_02_trial_056.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 8)])
+200.7449 	DATA 	Keypress: slash
+200.7665 	EXP 	iTrial: autoDraw = False
+200.7665 	EXP 	tTrial: autoDraw = False
+200.7665 	EXP 	pTrial: autoDraw = False
+200.7665 	EXP 	iTrial: size = array([0.9, 0.9])
+200.7665 	EXP 	iTrial: image = 'stimuli/block_02_trial_056.png'
+200.7665 	EXP 	pTrial: autoDraw = True
+201.1499 	EXP 	iTrial: autoDraw = True
+201.1499 	EXP 	tTrial: autoDraw = True
+201.1665 	EXP 	pTrial: autoDraw = False
+201.6513 	EXP 	New trial (rep=0, index=13): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_067.png'), ('pc_file_name', 'stimuli\\block_02_trial_067.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+201.6635 	DATA 	Keypress: slash
+201.6835 	EXP 	iTrial: autoDraw = False
+201.6835 	EXP 	tTrial: autoDraw = False
+201.6835 	EXP 	pTrial: autoDraw = False
+201.6835 	EXP 	iTrial: size = array([0.9, 0.9])
+201.6835 	EXP 	iTrial: image = 'stimuli/block_02_trial_067.png'
+201.6835 	EXP 	pTrial: autoDraw = True
+202.0667 	EXP 	iTrial: autoDraw = True
+202.0667 	EXP 	tTrial: autoDraw = True
+202.0835 	EXP 	pTrial: autoDraw = False
+202.4514 	EXP 	New trial (rep=0, index=14): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_036.png'), ('pc_file_name', 'stimuli\\block_02_trial_036.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 5)])
+202.4623 	DATA 	Keypress: z
+202.4828 	EXP 	iTrial: autoDraw = False
+202.4828 	EXP 	tTrial: autoDraw = False
+202.4828 	EXP 	pTrial: autoDraw = False
+202.4828 	EXP 	iTrial: size = array([0.9, 0.9])
+202.4828 	EXP 	iTrial: image = 'stimuli/block_02_trial_036.png'
+202.4828 	EXP 	pTrial: autoDraw = True
+202.8663 	EXP 	iTrial: autoDraw = True
+202.8663 	EXP 	tTrial: autoDraw = True
+202.8836 	EXP 	pTrial: autoDraw = False
+203.3014 	EXP 	New trial (rep=0, index=15): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_053.png'), ('pc_file_name', 'stimuli\\block_02_trial_053.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+203.3117 	DATA 	Keypress: slash
+203.3331 	EXP 	iTrial: autoDraw = False
+203.3331 	EXP 	tTrial: autoDraw = False
+203.3331 	EXP 	pTrial: autoDraw = False
+203.3331 	EXP 	iTrial: size = array([0.9, 0.9])
+203.3331 	EXP 	iTrial: image = 'stimuli/block_02_trial_053.png'
+203.3331 	EXP 	pTrial: autoDraw = True
+203.7161 	EXP 	iTrial: autoDraw = True
+203.7161 	EXP 	tTrial: autoDraw = True
+203.7325 	EXP 	pTrial: autoDraw = False
+204.2344 	EXP 	New trial (rep=0, index=16): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_046.png'), ('pc_file_name', 'stimuli\\block_02_trial_046.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+204.2452 	DATA 	Keypress: z
+204.2667 	EXP 	iTrial: autoDraw = False
+204.2667 	EXP 	tTrial: autoDraw = False
+204.2667 	EXP 	pTrial: autoDraw = False
+204.2667 	EXP 	iTrial: size = array([0.9, 0.9])
+204.2667 	EXP 	iTrial: image = 'stimuli/block_02_trial_046.png'
+204.2667 	EXP 	pTrial: autoDraw = True
+204.6507 	EXP 	iTrial: autoDraw = True
+204.6507 	EXP 	tTrial: autoDraw = True
+204.6661 	EXP 	pTrial: autoDraw = False
+205.0843 	EXP 	New trial (rep=0, index=17): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_049.png'), ('pc_file_name', 'stimuli\\block_02_trial_049.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 7)])
+205.0937 	DATA 	Keypress: slash
+205.1168 	EXP 	iTrial: autoDraw = False
+205.1168 	EXP 	tTrial: autoDraw = False
+205.1168 	EXP 	pTrial: autoDraw = False
+205.1168 	EXP 	iTrial: size = array([0.9, 0.9])
+205.1168 	EXP 	iTrial: image = 'stimuli/block_02_trial_049.png'
+205.1168 	EXP 	pTrial: autoDraw = True
+205.5000 	EXP 	iTrial: autoDraw = True
+205.5000 	EXP 	tTrial: autoDraw = True
+205.5168 	EXP 	pTrial: autoDraw = False
+205.8674 	EXP 	New trial (rep=0, index=18): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_045.png'), ('pc_file_name', 'stimuli\\block_02_trial_045.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+205.8763 	DATA 	Keypress: slash
+205.8860 	EXP 	iTrial: autoDraw = False
+205.8860 	EXP 	tTrial: autoDraw = False
+205.8860 	EXP 	pTrial: autoDraw = False
+205.8860 	EXP 	iTrial: size = array([0.9, 0.9])
+205.8860 	EXP 	iTrial: image = 'stimuli/block_02_trial_045.png'
+205.8860 	EXP 	pTrial: autoDraw = True
+206.2665 	EXP 	iTrial: autoDraw = True
+206.2665 	EXP 	tTrial: autoDraw = True
+206.3001 	EXP 	pTrial: autoDraw = False
+206.8664 	EXP 	tTrial: autoDraw = False
+206.9180 	EXP 	New trial (rep=0, index=19): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_038.png'), ('pc_file_name', 'stimuli\\block_02_trial_038.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 5)])
+206.9282 	DATA 	Keypress: z
+206.9496 	EXP 	iTrial: autoDraw = False
+206.9496 	EXP 	tTrial: autoDraw = False
+206.9496 	EXP 	pTrial: autoDraw = False
+206.9496 	EXP 	iTrial: size = array([0.9, 0.9])
+206.9496 	EXP 	iTrial: image = 'stimuli/block_02_trial_038.png'
+206.9496 	EXP 	pTrial: autoDraw = True
+207.3335 	EXP 	iTrial: autoDraw = True
+207.3335 	EXP 	tTrial: autoDraw = True
+207.3501 	EXP 	pTrial: autoDraw = False
+207.8851 	EXP 	New trial (rep=0, index=20): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_043.png'), ('pc_file_name', 'stimuli\\block_02_trial_043.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 4)])
+207.8949 	DATA 	Keypress: slash
+207.9167 	EXP 	iTrial: autoDraw = False
+207.9167 	EXP 	tTrial: autoDraw = False
+207.9167 	EXP 	pTrial: autoDraw = False
+207.9167 	EXP 	iTrial: size = array([0.9, 0.9])
+207.9167 	EXP 	iTrial: image = 'stimuli/block_02_trial_043.png'
+207.9167 	EXP 	pTrial: autoDraw = True
+208.3000 	EXP 	iTrial: autoDraw = True
+208.3000 	EXP 	tTrial: autoDraw = True
+208.3167 	EXP 	pTrial: autoDraw = False
+208.7679 	EXP 	New trial (rep=0, index=21): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_051.png'), ('pc_file_name', 'stimuli\\block_02_trial_051.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+208.7791 	DATA 	Keypress: z
+208.7996 	EXP 	iTrial: autoDraw = False
+208.7996 	EXP 	tTrial: autoDraw = False
+208.7996 	EXP 	pTrial: autoDraw = False
+208.7996 	EXP 	iTrial: size = array([0.9, 0.9])
+208.7996 	EXP 	iTrial: image = 'stimuli/block_02_trial_051.png'
+208.7996 	EXP 	pTrial: autoDraw = True
+209.1830 	EXP 	iTrial: autoDraw = True
+209.1830 	EXP 	tTrial: autoDraw = True
+209.1998 	EXP 	pTrial: autoDraw = False
+209.7834 	EXP 	tTrial: autoDraw = False
+209.8182 	EXP 	New trial (rep=0, index=22): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_058.png'), ('pc_file_name', 'stimuli\\block_02_trial_058.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+209.8294 	DATA 	Keypress: slash
+209.8499 	EXP 	iTrial: autoDraw = False
+209.8499 	EXP 	tTrial: autoDraw = False
+209.8499 	EXP 	pTrial: autoDraw = False
+209.8499 	EXP 	iTrial: size = array([0.9, 0.9])
+209.8499 	EXP 	iTrial: image = 'stimuli/block_02_trial_058.png'
+209.8499 	EXP 	pTrial: autoDraw = True
+210.2330 	EXP 	iTrial: autoDraw = True
+210.2330 	EXP 	tTrial: autoDraw = True
+210.2497 	EXP 	pTrial: autoDraw = False
+210.8329 	EXP 	tTrial: autoDraw = False
+211.1330 	EXP 	iTrial: autoDraw = False
+211.7362 	EXP 	New trial (rep=0, index=23): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_037.png'), ('pc_file_name', 'stimuli\\block_02_trial_037.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 0)])
+211.7663 	EXP 	iTrial: autoDraw = False
+211.7663 	EXP 	tTrial: autoDraw = False
+211.7663 	EXP 	pTrial: autoDraw = False
+211.7663 	EXP 	iTrial: size = array([0.9, 0.9])
+211.7663 	EXP 	iTrial: image = 'stimuli/block_02_trial_037.png'
+211.7663 	EXP 	pTrial: autoDraw = True
+212.1496 	EXP 	iTrial: autoDraw = True
+212.1496 	EXP 	tTrial: autoDraw = True
+212.1667 	EXP 	pTrial: autoDraw = False
+212.6010 	EXP 	New trial (rep=0, index=24): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_040.png'), ('pc_file_name', 'stimuli\\block_02_trial_040.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 2)])
+212.6114 	DATA 	Keypress: z
+212.6333 	EXP 	iTrial: autoDraw = False
+212.6333 	EXP 	tTrial: autoDraw = False
+212.6333 	EXP 	pTrial: autoDraw = False
+212.6333 	EXP 	iTrial: size = array([0.9, 0.9])
+212.6333 	EXP 	iTrial: image = 'stimuli/block_02_trial_040.png'
+212.6333 	EXP 	pTrial: autoDraw = True
+212.7018 	EXP 	New trial (rep=0, index=25): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_054.png'), ('pc_file_name', 'stimuli\\block_02_trial_054.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 1)])
+212.7141 	DATA 	Keypress: slash
+212.7330 	EXP 	iTrial: autoDraw = False
+212.7330 	EXP 	tTrial: autoDraw = False
+212.7330 	EXP 	pTrial: autoDraw = False
+212.7330 	EXP 	iTrial: size = array([0.9, 0.9])
+212.7330 	EXP 	iTrial: image = 'stimuli/block_02_trial_054.png'
+212.7330 	EXP 	pTrial: autoDraw = True
+213.1165 	EXP 	iTrial: autoDraw = True
+213.1165 	EXP 	tTrial: autoDraw = True
+213.1332 	EXP 	pTrial: autoDraw = False
+213.7163 	EXP 	tTrial: autoDraw = False
+213.7847 	EXP 	New trial (rep=0, index=26): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_065.png'), ('pc_file_name', 'stimuli\\block_02_trial_065.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 2)])
+213.7952 	DATA 	Keypress: z
+213.8165 	EXP 	iTrial: autoDraw = False
+213.8165 	EXP 	tTrial: autoDraw = False
+213.8165 	EXP 	pTrial: autoDraw = False
+213.8165 	EXP 	iTrial: size = array([0.9, 0.9])
+213.8165 	EXP 	iTrial: image = 'stimuli/block_02_trial_065.png'
+213.8165 	EXP 	pTrial: autoDraw = True
+214.2000 	EXP 	iTrial: autoDraw = True
+214.2000 	EXP 	tTrial: autoDraw = True
+214.2166 	EXP 	pTrial: autoDraw = False
+214.6842 	EXP 	New trial (rep=0, index=27): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_041.png'), ('pc_file_name', 'stimuli\\block_02_trial_041.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 5)])
+214.6972 	DATA 	Keypress: z
+214.7163 	EXP 	iTrial: autoDraw = False
+214.7163 	EXP 	tTrial: autoDraw = False
+214.7163 	EXP 	pTrial: autoDraw = False
+214.7163 	EXP 	iTrial: size = array([0.9, 0.9])
+214.7163 	EXP 	iTrial: image = 'stimuli/block_02_trial_041.png'
+214.7163 	EXP 	pTrial: autoDraw = True
+215.0998 	EXP 	iTrial: autoDraw = True
+215.0998 	EXP 	tTrial: autoDraw = True
+215.1166 	EXP 	pTrial: autoDraw = False
+215.5344 	EXP 	New trial (rep=0, index=28): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_057.png'), ('pc_file_name', 'stimuli\\block_02_trial_057.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+215.5484 	DATA 	Keypress: slash
+215.5666 	EXP 	iTrial: autoDraw = False
+215.5666 	EXP 	tTrial: autoDraw = False
+215.5666 	EXP 	pTrial: autoDraw = False
+215.5666 	EXP 	iTrial: size = array([0.9, 0.9])
+215.5666 	EXP 	iTrial: image = 'stimuli/block_02_trial_057.png'
+215.5666 	EXP 	pTrial: autoDraw = True
+215.9497 	EXP 	iTrial: autoDraw = True
+215.9497 	EXP 	tTrial: autoDraw = True
+215.9665 	EXP 	pTrial: autoDraw = False
+216.3520 	EXP 	New trial (rep=0, index=29): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_042.png'), ('pc_file_name', 'stimuli\\block_02_trial_042.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'D'), ('correct_response', 'z'), ('target_pos_index_condition', 8)])
+216.3612 	DATA 	Keypress: z
+216.3832 	EXP 	iTrial: autoDraw = False
+216.3832 	EXP 	tTrial: autoDraw = False
+216.3832 	EXP 	pTrial: autoDraw = False
+216.3832 	EXP 	iTrial: size = array([0.9, 0.9])
+216.3832 	EXP 	iTrial: image = 'stimuli/block_02_trial_042.png'
+216.3832 	EXP 	pTrial: autoDraw = True
+216.7665 	EXP 	iTrial: autoDraw = True
+216.7665 	EXP 	tTrial: autoDraw = True
+216.7833 	EXP 	pTrial: autoDraw = False
+217.2509 	EXP 	New trial (rep=0, index=30): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_059.png'), ('pc_file_name', 'stimuli\\block_02_trial_059.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 1)])
+217.2607 	DATA 	Keypress: slash
+217.2833 	EXP 	iTrial: autoDraw = False
+217.2833 	EXP 	tTrial: autoDraw = False
+217.2833 	EXP 	pTrial: autoDraw = False
+217.2833 	EXP 	iTrial: size = array([0.9, 0.9])
+217.2833 	EXP 	iTrial: image = 'stimuli/block_02_trial_059.png'
+217.2833 	EXP 	pTrial: autoDraw = True
+217.6663 	EXP 	iTrial: autoDraw = True
+217.6663 	EXP 	tTrial: autoDraw = True
+217.6832 	EXP 	pTrial: autoDraw = False
+218.2655 	EXP 	tTrial: autoDraw = False
+218.3007 	EXP 	New trial (rep=0, index=31): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_071.png'), ('pc_file_name', 'stimuli\\block_02_trial_071.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 5)])
+218.3104 	DATA 	Keypress: z
+218.3328 	EXP 	iTrial: autoDraw = False
+218.3328 	EXP 	tTrial: autoDraw = False
+218.3328 	EXP 	pTrial: autoDraw = False
+218.3328 	EXP 	iTrial: size = array([0.9, 0.9])
+218.3328 	EXP 	iTrial: image = 'stimuli/block_02_trial_071.png'
+218.3328 	EXP 	pTrial: autoDraw = True
+218.7161 	EXP 	iTrial: autoDraw = True
+218.7161 	EXP 	tTrial: autoDraw = True
+218.7328 	EXP 	pTrial: autoDraw = False
+219.3157 	EXP 	tTrial: autoDraw = False
+219.3175 	EXP 	New trial (rep=0, index=32): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_069.png'), ('pc_file_name', 'stimuli\\block_02_trial_069.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+219.3280 	DATA 	Keypress: slash
+219.3500 	EXP 	iTrial: autoDraw = False
+219.3500 	EXP 	tTrial: autoDraw = False
+219.3500 	EXP 	pTrial: autoDraw = False
+219.3500 	EXP 	iTrial: size = array([0.9, 0.9])
+219.3500 	EXP 	iTrial: image = 'stimuli/block_02_trial_069.png'
+219.3500 	EXP 	pTrial: autoDraw = True
+219.7333 	EXP 	iTrial: autoDraw = True
+219.7333 	EXP 	tTrial: autoDraw = True
+219.7501 	EXP 	pTrial: autoDraw = False
+220.2848 	EXP 	New trial (rep=0, index=33): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_039.png'), ('pc_file_name', 'stimuli\\block_02_trial_039.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 6)])
+220.2958 	DATA 	Keypress: slash
+220.3166 	EXP 	iTrial: autoDraw = False
+220.3166 	EXP 	tTrial: autoDraw = False
+220.3166 	EXP 	pTrial: autoDraw = False
+220.3166 	EXP 	iTrial: size = array([0.9, 0.9])
+220.3166 	EXP 	iTrial: image = 'stimuli/block_02_trial_039.png'
+220.3166 	EXP 	pTrial: autoDraw = True
+220.6999 	EXP 	iTrial: autoDraw = True
+220.6999 	EXP 	tTrial: autoDraw = True
+220.7159 	EXP 	pTrial: autoDraw = False
+221.1012 	EXP 	New trial (rep=0, index=34): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_062.png'), ('pc_file_name', 'stimuli\\block_02_trial_062.png'), ('distract_condition', 1), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 3)])
+221.1121 	DATA 	Keypress: slash
+221.1333 	EXP 	iTrial: autoDraw = False
+221.1333 	EXP 	tTrial: autoDraw = False
+221.1333 	EXP 	pTrial: autoDraw = False
+221.1333 	EXP 	iTrial: size = array([0.9, 0.9])
+221.1333 	EXP 	iTrial: image = 'stimuli/block_02_trial_062.png'
+221.1333 	EXP 	pTrial: autoDraw = True
+221.5165 	EXP 	iTrial: autoDraw = True
+221.5165 	EXP 	tTrial: autoDraw = True
+221.5332 	EXP 	pTrial: autoDraw = False
+221.9688 	EXP 	New trial (rep=0, index=35): OrderedDict([('linux_file_name', 'stimuli/block_02_trial_061.png'), ('pc_file_name', 'stimuli\\block_02_trial_061.png'), ('distract_condition', 0), ('target_color_condition', [255, 0, 0]), ('back_color_condition', [0, 0, 0]), ('distractor_color_condition', [0, 255, 0]), ('cue_condition', 0), ('target_condition', 'C'), ('correct_response', 'slash'), ('target_pos_index_condition', 4)])
+221.9805 	DATA 	Keypress: slash
+221.9994 	EXP 	iTrial: autoDraw = False
+221.9994 	EXP 	tTrial: autoDraw = False
+221.9994 	EXP 	pTrial: autoDraw = False
+221.9994 	EXP 	iTrial: size = array([0.9, 0.9])
+221.9994 	EXP 	iTrial: image = 'stimuli/block_02_trial_061.png'
+221.9994 	EXP 	pTrial: autoDraw = True
+222.3828 	EXP 	iTrial: autoDraw = True
+222.3828 	EXP 	tTrial: autoDraw = True
+222.3998 	EXP 	pTrial: autoDraw = False
+222.8612 	DATA 	Keypress: slash
+222.8832 	EXP 	iTrial: autoDraw = False
+222.8832 	EXP 	tTrial: autoDraw = False
+222.8832 	EXP 	pTrial: autoDraw = False
+222.8832 	EXP 	tPause: text = 'Take a break as you needed. Press the space key when you are ready to resume\n Number of blocks completed: 3\n Number of blocks remaining:  0'
+222.8832 	EXP 	tPause: autoDraw = True
+224.1040 	DATA 	Keypress: space
+224.1158 	EXP 	tPause: autoDraw = False
+224.1158 	EXP 	tEnd: autoDraw = True
+226.4010 	DATA 	Keypress: space
+226.4156 	EXP 	tEnd: autoDraw = False
+226.7382 	EXP 	window1: mouseVisible = True

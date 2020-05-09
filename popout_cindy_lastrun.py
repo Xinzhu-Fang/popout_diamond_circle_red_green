@@ -1,19 +1,24 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on July 09, 2019, at 18:57
-If you publish work using this script please cite the PsychoPy publications:
-    Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
-        Journal of Neuroscience Methods, 162(1-2), 8-13.
-    Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
-        Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
+This experiment was created using PsychoPy3 Experiment Builder (v2020.1.2),
+    on Fri May  8 19:54:06 2020
+If you publish work using this script the most relevant publication is:
+
+    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
+        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
+        https://doi.org/10.3758/s13428-018-01193-y
+
 """
 
 from __future__ import absolute_import, division
-from psychopy import locale_setup, sound, gui, visual, core, data, event, logging, clock
+
+from psychopy import locale_setup
+from psychopy import prefs
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
+
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
@@ -23,12 +28,14 @@ import sys  # to get file system encoding
 
 from psychopy.hardware import keyboard
 
+
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.1.2'
+psychopyVersion = '2020.1.2'
 expName = 'popout_cindy'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -44,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\GitHub\\Behavior-popout-attention\\popout_diamond_circle_red_green\\popout_cindy_lastrun.py',
+    originPath='/Users/xzfang/Github/popout_diamond_circle_red_green/popout_cindy_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -52,12 +59,13 @@ logFile = logging.LogFile(filename+'.log', level=logging.EXP)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
 
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
+frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Start Code - component code to be run before the window creation
 
 # Setup the Window
 win = visual.Window(
-    size=[2048, 1152], fullscr=True, screen=0, 
+    size=[1536, 864], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
@@ -92,9 +100,11 @@ tInstr = visual.TextStim(win=win, name='tInstr',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+kInstr = keyboard.Keyboard()
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
+kTrial = keyboard.Keyboard()
 iTrial = visual.ImageStim(
     win=win,
     name='iTrial', units='height', 
@@ -128,6 +138,7 @@ tPause = visual.TextStim(win=win, name='tPause',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
+kPause = keyboard.Keyboard()
 
 # Initialize components for Routine "end"
 endClock = core.Clock()
@@ -138,18 +149,18 @@ tEnd = visual.TextStim(win=win, name='tEnd',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+kEnd = keyboard.Keyboard()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # ------Prepare to start Routine "instr"-------
-t = 0
-instrClock.reset()  # clock
-frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
-kInstr = keyboard.Keyboard()
+kInstr.keys = []
+kInstr.rt = []
+_kInstr_allKeys = []
 # keep track of which components have finished
 instrComponents = [tInstr, kInstr]
 for thisComponent in instrComponents:
@@ -159,39 +170,49 @@ for thisComponent in instrComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+instrClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
 
-# -------Start Routine "instr"-------
+# -------Run Routine "instr"-------
 while continueRoutine:
     # get current time
     t = instrClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=instrClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
     # *tInstr* updates
-    if t >= 0.0 and tInstr.status == NOT_STARTED:
+    if tInstr.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        tInstr.tStart = t  # not accounting for scr refresh
         tInstr.frameNStart = frameN  # exact frame index
+        tInstr.tStart = t  # local t and not account for scr refresh
+        tInstr.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(tInstr, 'tStartRefresh')  # time at next scr refresh
         tInstr.setAutoDraw(True)
     
     # *kInstr* updates
-    if t >= 0.0 and kInstr.status == NOT_STARTED:
+    waitOnFlip = False
+    if kInstr.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        kInstr.tStart = t  # not accounting for scr refresh
         kInstr.frameNStart = frameN  # exact frame index
+        kInstr.tStart = t  # local t and not account for scr refresh
+        kInstr.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(kInstr, 'tStartRefresh')  # time at next scr refresh
         kInstr.status = STARTED
         # keyboard checking is just starting
-        kInstr.clearEvents(eventType='keyboard')
-    if kInstr.status == STARTED:
+        waitOnFlip = True
+        win.callOnFlip(kInstr.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(kInstr.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if kInstr.status == STARTED and not waitOnFlip:
         theseKeys = kInstr.getKeys(keyList=None, waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
+        _kInstr_allKeys.extend(theseKeys)
+        if len(_kInstr_allKeys):
+            kInstr.keys = _kInstr_allKeys[-1].name  # just the last key pressed
+            kInstr.rt = _kInstr_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -260,12 +281,11 @@ for thisBlock in blocks:
                 exec('{} = thisTrial[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "trial"-------
-        t = 0
-        trialClock.reset()  # clock
-        frameN = -1
         continueRoutine = True
         # update component parameters for each repeat
-        kTrial = keyboard.Keyboard()
+        kTrial.keys = []
+        kTrial.rt = []
+        _kTrial_allKeys = []
         iTrial.setSize((iTrial_size, iTrial_size))
         iTrial.setImage(linux_file_name)
         # keep track of which components have finished
@@ -277,19 +297,28 @@ for thisBlock in blocks:
             thisComponent.tStopRefresh = None
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
         
-        # -------Start Routine "trial"-------
+        # -------Run Routine "trial"-------
         while continueRoutine:
             # get current time
             t = trialClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=trialClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
             # *kTrial* updates
-            if t >= 0 and kTrial.status == NOT_STARTED:
+            waitOnFlip = False
+            if kTrial.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
-                kTrial.tStart = t  # not accounting for scr refresh
                 kTrial.frameNStart = frameN  # exact frame index
+                kTrial.tStart = t  # local t and not account for scr refresh
+                kTrial.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(kTrial, 'tStartRefresh')  # time at next scr refresh
                 kTrial.status = STARTED
                 # AllowedKeys looks like a variable named `kTrial_allowed_keys`
@@ -302,26 +331,24 @@ for thisBlock in blocks:
                     else:
                         kTrial_allowed_keys = eval(kTrial_allowed_keys)
                 # keyboard checking is just starting
+                waitOnFlip = True
                 win.callOnFlip(kTrial.clock.reset)  # t=0 on next screen flip
-                kTrial.clearEvents(eventType='keyboard')
-            frameRemains = 0 + kTrial_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if kTrial.status == STARTED and t >= frameRemains:
-                # keep track of stop time/frame for later
-                kTrial.tStop = t  # not accounting for scr refresh
-                kTrial.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(kTrial, 'tStopRefresh')  # time at next scr refresh
-                kTrial.status = FINISHED
+                win.callOnFlip(kTrial.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if kTrial.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > kTrial.tStartRefresh + kTrial_duration-frameTolerance:
+                    # keep track of stop time/frame for later
+                    kTrial.tStop = t  # not accounting for scr refresh
+                    kTrial.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(kTrial, 'tStopRefresh')  # time at next scr refresh
+                    kTrial.status = FINISHED
+            if kTrial.status == STARTED and not waitOnFlip:
                 theseKeys = kTrial.getKeys(keyList=list(kTrial_allowed_keys), waitRelease=False)
-                if len(theseKeys):
-                    theseKeys = theseKeys[0]  # at least one key was pressed
-                    
-                    # check for quit:
-                    if "escape" == theseKeys:
-                        endExpNow = True
-                    kTrial.keys = theseKeys.name  # just the last key pressed
-                    kTrial.rt = theseKeys.rt
-                    # was this 'correct'?
+                _kTrial_allKeys.extend(theseKeys)
+                if len(_kTrial_allKeys):
+                    kTrial.keys = _kTrial_allKeys[-1].name  # just the last key pressed
+                    kTrial.rt = _kTrial_allKeys[-1].rt
+                    # was this correct?
                     if (kTrial.keys == str(correct_response)) or (kTrial.keys == correct_response):
                         kTrial.corr = 1
                     else:
@@ -330,49 +357,55 @@ for thisBlock in blocks:
                     continueRoutine = False
             
             # *iTrial* updates
-            if t >= pTrial_duration and iTrial.status == NOT_STARTED:
+            if iTrial.status == NOT_STARTED and tThisFlip >= pTrial_duration-frameTolerance:
                 # keep track of start time/frame for later
-                iTrial.tStart = t  # not accounting for scr refresh
                 iTrial.frameNStart = frameN  # exact frame index
+                iTrial.tStart = t  # local t and not account for scr refresh
+                iTrial.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(iTrial, 'tStartRefresh')  # time at next scr refresh
                 iTrial.setAutoDraw(True)
-            frameRemains = pTrial_duration + iTrial_duration + pTrial_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if iTrial.status == STARTED and t >= frameRemains:
-                # keep track of stop time/frame for later
-                iTrial.tStop = t  # not accounting for scr refresh
-                iTrial.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(iTrial, 'tStopRefresh')  # time at next scr refresh
-                iTrial.setAutoDraw(False)
+            if iTrial.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > iTrial.tStartRefresh + iTrial_duration + pTrial_duration-frameTolerance:
+                    # keep track of stop time/frame for later
+                    iTrial.tStop = t  # not accounting for scr refresh
+                    iTrial.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(iTrial, 'tStopRefresh')  # time at next scr refresh
+                    iTrial.setAutoDraw(False)
             
             # *tTrial* updates
-            if t >= pTrial_duration and tTrial.status == NOT_STARTED:
+            if tTrial.status == NOT_STARTED and tThisFlip >= pTrial_duration-frameTolerance:
                 # keep track of start time/frame for later
-                tTrial.tStart = t  # not accounting for scr refresh
                 tTrial.frameNStart = frameN  # exact frame index
+                tTrial.tStart = t  # local t and not account for scr refresh
+                tTrial.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(tTrial, 'tStartRefresh')  # time at next scr refresh
                 tTrial.setAutoDraw(True)
-            frameRemains = pTrial_duration + pTrial_duration + tTrial_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if tTrial.status == STARTED and t >= frameRemains:
-                # keep track of stop time/frame for later
-                tTrial.tStop = t  # not accounting for scr refresh
-                tTrial.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(tTrial, 'tStopRefresh')  # time at next scr refresh
-                tTrial.setAutoDraw(False)
+            if tTrial.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > tTrial.tStartRefresh + pTrial_duration + tTrial_duration-frameTolerance:
+                    # keep track of stop time/frame for later
+                    tTrial.tStop = t  # not accounting for scr refresh
+                    tTrial.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(tTrial, 'tStopRefresh')  # time at next scr refresh
+                    tTrial.setAutoDraw(False)
             
             # *pTrial* updates
-            if t >= 0.0 and pTrial.status == NOT_STARTED:
+            if pTrial.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                pTrial.tStart = t  # not accounting for scr refresh
                 pTrial.frameNStart = frameN  # exact frame index
+                pTrial.tStart = t  # local t and not account for scr refresh
+                pTrial.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(pTrial, 'tStartRefresh')  # time at next scr refresh
                 pTrial.setAutoDraw(True)
-            frameRemains = 0.0 + pTrial_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if pTrial.status == STARTED and t >= frameRemains:
-                # keep track of stop time/frame for later
-                pTrial.tStop = t  # not accounting for scr refresh
-                pTrial.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(pTrial, 'tStopRefresh')  # time at next scr refresh
-                pTrial.setAutoDraw(False)
+            if pTrial.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > pTrial.tStartRefresh + pTrial_duration-frameTolerance:
+                    # keep track of stop time/frame for later
+                    pTrial.tStop = t  # not accounting for scr refresh
+                    pTrial.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(pTrial, 'tStopRefresh')  # time at next scr refresh
+                    pTrial.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -424,9 +457,6 @@ for thisBlock in blocks:
     
     
     # ------Prepare to start Routine "pause"-------
-    t = 0
-    pauseClock.reset()  # clock
-    frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
     Cindy_num_blocks_finished += 1
@@ -434,7 +464,9 @@ for thisBlock in blocks:
     
     
     tPause.setText(tPausse_text_final)
-    kPause = keyboard.Keyboard()
+    kPause.keys = []
+    kPause.rt = []
+    _kPause_allKeys = []
     # keep track of which components have finished
     pauseComponents = [tPause, kPause]
     for thisComponent in pauseComponents:
@@ -444,42 +476,49 @@ for thisBlock in blocks:
         thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    pauseClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
     
-    # -------Start Routine "pause"-------
+    # -------Run Routine "pause"-------
     while continueRoutine:
         # get current time
         t = pauseClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=pauseClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
         # *tPause* updates
-        if t >= 0.0 and tPause.status == NOT_STARTED:
+        if tPause.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            tPause.tStart = t  # not accounting for scr refresh
             tPause.frameNStart = frameN  # exact frame index
+            tPause.tStart = t  # local t and not account for scr refresh
+            tPause.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(tPause, 'tStartRefresh')  # time at next scr refresh
             tPause.setAutoDraw(True)
         
         # *kPause* updates
-        if t >= 0.0 and kPause.status == NOT_STARTED:
+        waitOnFlip = False
+        if kPause.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            kPause.tStart = t  # not accounting for scr refresh
             kPause.frameNStart = frameN  # exact frame index
+            kPause.tStart = t  # local t and not account for scr refresh
+            kPause.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(kPause, 'tStartRefresh')  # time at next scr refresh
             kPause.status = STARTED
             # keyboard checking is just starting
+            waitOnFlip = True
             win.callOnFlip(kPause.clock.reset)  # t=0 on next screen flip
-            kPause.clearEvents(eventType='keyboard')
-        if kPause.status == STARTED:
+            win.callOnFlip(kPause.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if kPause.status == STARTED and not waitOnFlip:
             theseKeys = kPause.getKeys(keyList=['space'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                kPause.keys = theseKeys.name  # just the last key pressed
-                kPause.rt = theseKeys.rt
+            _kPause_allKeys.extend(theseKeys)
+            if len(_kPause_allKeys):
+                kPause.keys = _kPause_allKeys[-1].name  # just the last key pressed
+                kPause.rt = _kPause_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
         
@@ -522,12 +561,11 @@ for thisBlock in blocks:
 
 
 # ------Prepare to start Routine "end"-------
-t = 0
-endClock.reset()  # clock
-frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
-kEnd = keyboard.Keyboard()
+kEnd.keys = []
+kEnd.rt = []
+_kEnd_allKeys = []
 # keep track of which components have finished
 endComponents = [tEnd, kEnd]
 for thisComponent in endComponents:
@@ -537,42 +575,49 @@ for thisComponent in endComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+endClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
 
-# -------Start Routine "end"-------
+# -------Run Routine "end"-------
 while continueRoutine:
     # get current time
     t = endClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=endClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
     # *tEnd* updates
-    if t >= 0.0 and tEnd.status == NOT_STARTED:
+    if tEnd.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        tEnd.tStart = t  # not accounting for scr refresh
         tEnd.frameNStart = frameN  # exact frame index
+        tEnd.tStart = t  # local t and not account for scr refresh
+        tEnd.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(tEnd, 'tStartRefresh')  # time at next scr refresh
         tEnd.setAutoDraw(True)
     
     # *kEnd* updates
-    if t >= 0.0 and kEnd.status == NOT_STARTED:
+    waitOnFlip = False
+    if kEnd.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        kEnd.tStart = t  # not accounting for scr refresh
         kEnd.frameNStart = frameN  # exact frame index
+        kEnd.tStart = t  # local t and not account for scr refresh
+        kEnd.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(kEnd, 'tStartRefresh')  # time at next scr refresh
         kEnd.status = STARTED
         # keyboard checking is just starting
+        waitOnFlip = True
         win.callOnFlip(kEnd.clock.reset)  # t=0 on next screen flip
-        kEnd.clearEvents(eventType='keyboard')
-    if kEnd.status == STARTED:
+        win.callOnFlip(kEnd.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if kEnd.status == STARTED and not waitOnFlip:
         theseKeys = kEnd.getKeys(keyList=None, waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            kEnd.keys = theseKeys.name  # just the last key pressed
-            kEnd.rt = theseKeys.rt
+        _kEnd_allKeys.extend(theseKeys)
+        if len(_kEnd_allKeys):
+            kEnd.keys = _kEnd_allKeys[-1].name  # just the last key pressed
+            kEnd.rt = _kEnd_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
